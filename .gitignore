@@ -1,0 +1,129 @@
+# Логи ошибок
+error_log
+*.log
+
+# Файлы конфигурации сервера
+.htaccess
+.htaccess-current
+.htaccess-old
+.htaccess2
+htaccess
+
+# Кэш и временные файлы
+ai-cache/
+cache/
+tmp/
+temp/
+
+# Системные файлы
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Файлы с ключами API и токенами
+2testing/
+*.key
+*.pem
+*.crt
+
+# Файлы с потенциальными секретами
+*secret*
+*password*
+*token*
+*api*
+
+# Временные файлы PHP
+*.tmp
+*.temp
+
+# Файлы резервных копий
+*.bak
+*.backup
+*.old
+
+# Файлы с конфигурацией базы данных
+config.php
+database.php
+db_config.php
+*.ini
+
+# Файлы с личными данными
+personal/
+private/
+admin/
+
+# Файлы с ключами сервисов
+google*.php
+yandex*.php
+wmail*.php
+be529b51bf55.html
+
+# Файлы с потенциальными ключами
+novosti.txt
+urllist.txt
+top100check.txt
+
+# Файлы с конфигурацией
+php-htaccess.txt
+gzdoc.php
+zip.php
+resize.php
+simple.php
+adaptive-images.php
+
+# Файлы с потенциальными ключами API
+SitemapGenerator.php
+phpSitemapNG/
+php-sitemap-generator/
+
+# Файлы с потенциальными ключами
+settings/
+
+# Файлы с потенциальными ключами
+SEO Tools, Software and Articles _ SEO Site Checkup_files/
+SEO Tools, Software and Articles _ SEO Site Checkup.html
+seo-checker.pdf
+
+# Файлы с потенциальными ключами
+*.txt
+*.pdf
+*.xml
+
+# Исключения для основных файлов сайта
+!index.php
+!404.php
+!robots.txt
+!sitemap.xml
+!ads.txt
+!BingSiteAuth.xml
+!yandex_29ee4ae64b375bcd.php
+!yandex_29ee4ae64b375bcd.html
+!google48719379f71658b9.php
+!googled493a84debb089d8.php
+!yandex_6e73059fb62f1500.php
+!wmail_d0d62f10fbf4d147.php
+!be529b51bf55.html
+
+# Основные PHP файлы сайта
+!*.php
+
+# Основные CSS файлы
+!css/*.css
+!*.css
+
+# Основные JS файлы
+!js/*.js
+!*.js
+
+# Основные изображения
+!img/**/*.jpg
+!img/**/*.png
+!img/**/*.gif
+!img/**/*.webp
+!*.jpg
+!*.png
+!*.gif
+!*.webp
+!*.ico

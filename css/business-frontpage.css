@@ -1,0 +1,110 @@
+body {
+	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+	font-size: 17px;
+}
+
+.white, .white a {
+  color: #999999;
+}
+
+/* change the URL to a picture of your choice - the higher quality the better! */
+.business-header {
+	height: 400px;
+	background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.business-header-girl {
+	height: 400px;
+	background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.business-header-para {
+	height: 400px;
+	background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.business-header-guy {
+	height: 400px;
+	background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.business-header-404 {
+	height: 400px;
+	background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+/* adjust the color and text shadow to optimize legibility once you have an image set - you can also change the vertical positioning if desired  */
+.tagline {
+	color: #fff;
+	text-shadow: 0 0 10px #000;
+}
+
+footer {
+	margin: 50px 0;
+}
+
+   a.rollover-guy {
+    background: url(/img/seksualnoe-obrazovanie-dlya-podrostkov-parnei-600.jpg); /* Путь к файлу с исходным  рисунком */
+    display: block; /* Рисунок как блочный элемент */
+    width: 300px; /* Ширина рисунка в пикселах */
+    height: 300px; /* Высота рисунка */
+	border-radius: 50%;
+   }
+   a.rollover-guy:hover {
+    background-position: 0 -300px; /* Смещение фона */
+	border-radius: 50%;
+   }
+ 
+    a.rollover-para {
+    background: url(/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-i-parnei-600.jpg); /* Путь к файлу с исходным  рисунком */
+    display: block; /* Рисунок как блочный элемент */
+    width: 300px; /* Ширина рисунка в пикселах */
+    height: 300px; /* Высота рисунка */
+	border-radius: 50%;
+   }
+   a.rollover-para:hover {
+    background-position: 0 -300px; /* Смещение фона */
+	border-radius: 50%;
+   }
+   
+      a.rollover-girl {
+    background: url(/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-600.jpg); /* Путь к файлу с исходным  рисунком */
+    display: block; /* Рисунок как блочный элемент */
+    width: 300px; /* Ширина рисунка в пикселах */
+    height: 300px; /* Высота рисунка */
+	border-radius: 50%;
+   }
+   a.rollover-girl:hover {
+    background-position: 0 -300px; /* Смещение фона */
+	border-radius: 50%;
+   }
+   
+   .fixedtext {	/* Фиксирует текст/объект на экране <div class="fixedtext"></div> */
+  position: fixed;
+}
+
+   .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   
+	#bg_image{
+		width:100%;
+		position:absolute;
+	}
+
+	.bg_slider{
+		width:100%;
+		position:fixed;
+	}
+
+	#placeholder{
+		height:2000px;
+		
+	}
+  }

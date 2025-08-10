@@ -1,0 +1,426 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a{background:0 0}a:active,a:hover{outline:0}h1{margin:.67em 0}b,strong{font-weight:700}
+hr{height:0;-moz-box-sizing:content-box;box-sizing:content-box}
+img{border:0}svg:not(:root){overflow:hidden}
+button,input,select,textarea{margin:0}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{padding:0;box-sizing:border-box}input[type=search]{-webkit-appearance:textfield}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}textarea{overflow:auto;vertical-align:top}@media print{
+*{color:#000!important;text-shadow:none!important;background:transparent!important;box-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}a[href^="javascript:"]:after,a[href^="#"]:after{content:""}blockquote,pre{border:1px solid #999;page-break-inside:avoid}
+img,tr{page-break-inside:avoid}img{max-width:100%!important}@page{margin:2cm .5cm}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}select{background:#fff!important}.navbar{display:none}.table td,.table th{background-color:#fff!important}.btn>.caret,.dropup>.btn>.caret{border-top-color:#000!important}.label{border:1px solid #000}.table{border-collapse:collapse!important}.table-bordered td,.table-bordered th{border:1px solid #ddd!important}}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.428571429;color:#333;background-color:#fff}button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#428bca;text-decoration:none}a:focus,a:hover{color:#2a6496;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}img{vertical-align:middle}
+hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}p{margin:0 0 10px}@media (min-width:768px){}
+.small,small{font-size:85%}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:inherit}.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-weight:400;line-height:1;color:#999}h1,h2,h3{margin-top:20px;margin-bottom:10px}h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:65%}
+h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-size:75%}.h1,h1{font-size:36px}.h2,h2{font-size:30px}.h3,h3{font-size:24px}.h4,h4{font-size:18px}
+ol,ul{margin-top:0;margin-bottom:10px}@media (min-width:768px){
+.dl-horizontal dd:after,.dl-horizontal dd:before{display:table;content:" "}.dl-horizontal dd:after{clear:both}}abbr[data-original-title],abbr[title]{cursor:help;border-bottom:1px dotted #999}
+blockquote{padding:10px 20px;margin:0 0 20px;border-left:5px solid #eee}blockquote p{font-size:17.5px;font-weight:300;line-height:1.25}blockquote p:last-child{margin-bottom:0}
+blockquote.pull-right .small,blockquote.pull-right p,blockquote.pull-right small{text-align:right}
+blockquote.pull-right .small:after,blockquote.pull-right small:after{content:'\00A0 \2014'}blockquote:after,blockquote:before{content:""}address{margin-bottom:20px;font-style:normal;line-height:1.428571429}
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.container:after,.container:before{display:table;content:" "}.container:after{clear:both}.row{margin-right:-15px;margin-left:-15px}.row:after,.row:before{display:table;content:" "}.row:after{clear:both}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:768px){
+.container{width:750px}.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left}
+.col-sm-9{width:75%}
+.col-sm-4{width:33.33333333333333%}.col-sm-3{width:25%}}@media (min-width:992px){
+.container{width:970px}}@media (min-width:1200px){
+.container{width:1170px}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{float:left}.col-lg-12{width:100%}
+.col-lg-9{width:75%}
+.col-lg-3{width:25%}}
+.table{width:100%;margin-bottom:20px}
+.table .table{background-color:#fff}@media (max-width:767px){}
+input[type=search]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}input[type=checkbox],input[type=radio]{margin:4px 0 0;line-height:normal}input[type=file]{display:block}
+input[type=checkbox]:focus,input[type=file]:focus,input[type=radio]:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+.form-control:-moz-placeholder{color:#999}.form-control::-moz-placeholder{color:#999}.form-control:-ms-input-placeholder{color:#999}.form-control::-webkit-input-placeholder{color:#999}
+.checkbox,.radio{display:block;min-height:20px;padding-left:20px;margin-top:10px;margin-bottom:10px;vertical-align:middle}.checkbox label,.radio label{display:inline;margin-bottom:0;font-weight:400;cursor:pointer}.checkbox input[type=checkbox],.checkbox-inline input[type=checkbox],.radio input[type=radio],.radio-inline input[type=radio]{float:left;margin-left:-20px}
+.checkbox-inline[disabled],.checkbox[disabled],.radio-inline[disabled],.radio[disabled],fieldset[disabled] .checkbox,fieldset[disabled] .checkbox-inline,fieldset[disabled] .radio,fieldset[disabled] .radio-inline,fieldset[disabled] input[type=checkbox],fieldset[disabled] input[type=radio],input[type=checkbox][disabled],input[type=radio][disabled]{cursor:not-allowed}
+.has-warning .checkbox,.has-warning .checkbox-inline,.has-warning .control-label,.has-warning .help-block,.has-warning .radio,.has-warning .radio-inline{color:#c09853}
+.has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline{color:#b94a48}
+.has-success .checkbox,.has-success .checkbox-inline,.has-success .control-label,.has-success .help-block,.has-success .radio,.has-success .radio-inline{color:#468847}@media (min-width:768px){
+.form-inline .checkbox,.form-inline .radio{display:inline-block;padding-left:0;margin-top:0;margin-bottom:0}.form-inline .checkbox input[type=checkbox],.form-inline .radio input[type=radio]{float:none;margin-left:0}}.form-horizontal .checkbox,.form-horizontal .checkbox-inline,.form-horizontal .control-label,.form-horizontal .radio,.form-horizontal .radio-inline{padding-top:7px;margin-top:0;margin-bottom:0}
+.form-horizontal .form-group:after,.form-horizontal .form-group:before{display:table;content:" "}.form-horizontal .form-group:after{clear:both}@media (min-width:768px){}
+.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.428571429;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}
+.btn.disabled,.btn[disabled],fieldset[disabled] .btn{pointer-events:none;cursor:not-allowed;opacity:.65;filter:alpha(opacity=65);-webkit-box-shadow:none;box-shadow:none}
+.btn-default.active,.btn-default:active,.btn-default:focus,.btn-default:hover,.open .dropdown-toggle.btn-default{color:#333;background-color:#ebebeb;border-color:#adadad}.btn-default.active,.btn-default:active,.open .dropdown-toggle.btn-default{background-image:none}
+.btn-primary.active,.btn-primary:active,.btn-primary:focus,.btn-primary:hover,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#3276b1;border-color:#285e8e}.btn-primary.active,.btn-primary:active,.open .dropdown-toggle.btn-primary{background-image:none}
+.btn-warning.active,.btn-warning:active,.btn-warning:focus,.btn-warning:hover,.open .dropdown-toggle.btn-warning{color:#fff;background-color:#ed9c28;border-color:#d58512}.btn-warning.active,.btn-warning:active,.open .dropdown-toggle.btn-warning{background-image:none}
+.btn-danger.active,.btn-danger:active,.btn-danger:focus,.btn-danger:hover,.open .dropdown-toggle.btn-danger{color:#fff;background-color:#d2322d;border-color:#ac2925}.btn-danger.active,.btn-danger:active,.open .dropdown-toggle.btn-danger{background-image:none}
+.btn-success.active,.btn-success:active,.btn-success:focus,.btn-success:hover,.open .dropdown-toggle.btn-success{color:#fff;background-color:#47a447;border-color:#398439}.btn-success.active,.btn-success:active,.open .dropdown-toggle.btn-success{background-image:none}
+.btn-info.active,.btn-info:active,.btn-info:focus,.btn-info:hover,.open .dropdown-toggle.btn-info{color:#fff;background-color:#39b3d7;border-color:#269abc}.btn-info.active,.btn-info:active,.open .dropdown-toggle.btn-info{background-image:none}
+.fade{opacity:0;-webkit-transition:opacity .15s linear;transition:opacity .15s linear}
+.collapse{display:none}
+.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;transition:height .35s ease}@font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';-webkit-font-smoothing:antialiased;font-style:normal;font-weight:400;line-height:1;-moz-osx-font-smoothing:grayscale}.glyphicon:empty{width:1em}
+.glyphicon-home:before{content:"\e021"}
+.dropdown{position:relative}
+.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;list-style:none;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175);background-clip:padding-box}
+.dropdown-menu .divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}
+.dropdown-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:990}
+.dropup .caret,.navbar-fixed-bottom .dropdown .caret{border-top:0 dotted;border-bottom:4px solid #000;content:""}.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{top:auto;bottom:100%;margin-bottom:1px}@media (min-width:768px){.navbar-right .dropdown-menu{right:0;left:auto}}
+.btn-toolbar:after,.btn-toolbar:before{display:table;content:" "}.btn-toolbar:after{clear:both}
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle){border-radius:0}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){border-top-right-radius:0;border-bottom-right-radius:0}.btn-group>.btn:last-child:not(:first-child),.btn-group>.dropdown-toggle:not(:first-child){border-bottom-left-radius:0;border-top-left-radius:0}
+.btn-group>.btn-group:not(:first-child):not(:last-child)>.btn{border-radius:0}
+.btn .caret{margin-left:0}
+.btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before{display:table;content:" "}.btn-group-vertical>.btn-group:after{clear:both}
+.btn-group-vertical>.btn:not(:first-child):not(:last-child){border-radius:0}.btn-group-vertical>.btn:first-child:not(:last-child){border-top-right-radius:4px;border-bottom-right-radius:0;border-bottom-left-radius:0}.btn-group-vertical>.btn:last-child:not(:first-child){border-top-right-radius:0;border-bottom-left-radius:4px;border-top-left-radius:0}.btn-group-vertical>.btn-group:not(:first-child):not(:last-child)>.btn{border-radius:0}
+.btn-group-justified .btn{display:table-cell;float:none;width:1%}[data-toggle=buttons]>.btn>input[type=checkbox],[data-toggle=buttons]>.btn>input[type=radio]{display:none}
+.input-group .form-control:not(:first-child):not(:last-child),.input-group-addon:not(:first-child):not(:last-child),.input-group-btn:not(:first-child):not(:last-child){border-radius:0}
+.input-group .form-control:first-child,.input-group-addon:first-child,.input-group-btn:first-child>.btn,.input-group-btn:first-child>.dropdown-toggle,.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){border-top-right-radius:0;border-bottom-right-radius:0}
+.input-group .form-control:last-child,.input-group-addon:last-child,.input-group-btn:first-child>.btn:not(:first-child),.input-group-btn:last-child>.btn,.input-group-btn:last-child>.dropdown-toggle{border-bottom-left-radius:0;border-top-left-radius:0}
+.nav{padding-left:0;margin-bottom:0;list-style:none}.nav:after,.nav:before{display:table;content:" "}.nav:after{clear:both}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;background-color:#eee}
+.nav .open>a,.nav .open>a:focus,.nav .open>a:hover{background-color:#eee;border-color:#428bca}.nav .open>a .caret,.nav .open>a:focus .caret,.nav .open>a:hover .caret{border-top-color:#2a6496;border-bottom-color:#2a6496}.nav .nav-divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}
+.nav-tabs.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media (min-width:768px){}@media (min-width:768px){}
+.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media (min-width:768px){}@media (min-width:768px){}
+.nav .caret{border-top-color:#428bca;border-bottom-color:#428bca}.nav a:hover .caret{border-top-color:#2a6496;border-bottom-color:#2a6496}.nav-tabs .dropdown-menu{margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar:after,.navbar:before{display:table;content:" "}.navbar:after{clear:both}@media (min-width:768px){.navbar{border-radius:4px}}.navbar-header:after,.navbar-header:before{display:table;content:" "}.navbar-header:after{clear:both}@media (min-width:768px){.navbar-header{float:left}}.navbar-collapse{max-height:340px;padding-right:15px;padding-left:15px;overflow-x:visible;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}.navbar-collapse:after,.navbar-collapse:before{display:table;content:" "}.navbar-collapse:after{clear:both}@media (min-width:768px){
+.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}}
+.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}@media (min-width:768px){}
+.navbar-fixed-bottom,.navbar-fixed-top{position:fixed;right:0;left:0;z-index:1030}@media (min-width:768px){.navbar-fixed-bottom,.navbar-fixed-top{border-radius:0}}.navbar-fixed-top{top:0;border-width:0 0 1px}
+.navbar-brand{float:left;padding:15px;font-size:18px;line-height:20px}.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}@media (min-width:768px){.navbar>.container .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (max-width:767px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;box-shadow:none}.navbar-nav .open .dropdown-menu .dropdown-header,.navbar-nav .open .dropdown-menu>li>a{padding:5px 15px 5px 25px}.navbar-nav .open .dropdown-menu>li>a{line-height:20px}.navbar-nav .open .dropdown-menu>li>a:focus,.navbar-nav .open .dropdown-menu>li>a:hover{background-image:none}}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}@media (min-width:768px){}@media (min-width:768px){
+.navbar-form .checkbox,.navbar-form .radio{display:inline-block;padding-left:0;margin-top:0;margin-bottom:0}.navbar-form .checkbox input[type=checkbox],.navbar-form .radio input[type=radio]{float:none;margin-left:0}}@media (max-width:767px){}@media (min-width:768px){}@media (min-width:768px){}@media (max-width:767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#777}.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{color:#333;background-color:transparent}.navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{color:#555;background-color:#e7e7e7}.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover{color:#ccc;background-color:transparent}}
+.navbar-inverse{background-color:#222;border-color:#080808}.navbar-inverse .navbar-brand{color:#999}.navbar-inverse .navbar-brand:focus,.navbar-inverse .navbar-brand:hover{color:#fff;background-color:transparent}.navbar-inverse .navbar-nav>li>a,.navbar-inverse .navbar-text{color:#999}.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{color:#fff;background-color:transparent}
+.navbar-inverse .navbar-toggle{border-color:#333}.navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-toggle:hover{background-color:#333}.navbar-inverse .navbar-toggle .icon-bar{background-color:#fff}.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form{border-color:#101010}@media (max-width:767px){
+.navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header{border-color:#080808}.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{color:#999}.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover{color:#fff;background-color:transparent}.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a,.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover{color:#fff;background-color:#080808}.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:hover{color:#444;background-color:transparent}}
+.pagination{display:inline-block;padding-left:0;margin:20px 0;border-radius:4px}
+.pager:after,.pager:before{display:table;content:" "}.pager:after{clear:both}
+.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
+.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;background-color:#999;border-radius:10px}
+.btn .badge{position:relative;top:-1px}@media screen and (min-width:768px){}
+.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert h4{margin-top:0;color:inherit}.alert .alert-link{font-weight:700}
+.alert-dismissable .close{position:relative;top:-2px;right:-21px;color:inherit}
+@-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-moz-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-o-keyframes progress-bar-stripes{from{background-position:0 0}to{background-position:40px 0}}@keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}.progress{height:20px;margin-bottom:20px;overflow:hidden;background-color:#f5f5f5;border-radius:4px;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}
+.media,.media-body{overflow:hidden;zoom:1}.media,.media .media{margin-top:15px}
+.panel-body:after,.panel-body:before{display:table;content:" "}.panel-body:after{clear:both}
+.close{float:right;font-size:21px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;filter:alpha(opacity=20)}
+button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none}.modal-open{overflow:hidden}.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:auto;overflow-y:scroll}.modal.fade .modal-dialog{-webkit-transform:translate(0,-25%);-ms-transform:translate(0,-25%);transform:translate(0,-25%);-webkit-transition:-webkit-transform .3s ease-out;-moz-transition:-moz-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal.in .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}.modal-dialog{position:relative;z-index:1050;width:auto;padding:10px;margin-right:auto;margin-left:auto}
+.modal-header .close{margin-top:-2px}
+.modal-footer:after,.modal-footer:before{display:table;content:" "}.modal-footer:after{clear:both}@media screen and (min-width:768px){
+.modal-dialog{width:600px;padding-top:30px;padding-bottom:30px}}
+.tooltip{position:absolute;z-index:1030;display:block;font-size:12px;line-height:1.4;opacity:0;filter:alpha(opacity=0);visibility:visible}
+.tooltip-inner{max-width:200px;padding:3px 8px;color:#fff;text-align:center;text-decoration:none;background-color:#000;border-radius:4px}.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-top-color:#000;border-width:5px 5px 0}.tooltip.top-left .tooltip-arrow{bottom:0;left:5px;border-top-color:#000;border-width:5px 5px 0}.tooltip.top-right .tooltip-arrow{right:5px;bottom:0;border-top-color:#000;border-width:5px 5px 0}.tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-right-color:#000;border-width:5px 5px 5px 0}.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-left-color:#000;border-width:5px 0 5px 5px}.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-bottom-color:#000;border-width:0 5px 5px}.tooltip.bottom-left .tooltip-arrow{top:0;left:5px;border-bottom-color:#000;border-width:0 5px 5px}.tooltip.bottom-right .tooltip-arrow{top:0;right:5px;border-bottom-color:#000;border-width:0 5px 5px}.popover{position:absolute;top:0;left:0;z-index:1010;display:none;max-width:276px;padding:1px;text-align:left;white-space:normal;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);background-clip:padding-box}
+.popover-title{padding:8px 14px;margin:0;font-size:14px;font-weight:400;line-height:18px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover .arrow,.popover .arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover .arrow{border-width:11px}.popover .arrow:after{border-width:10px;content:""}.popover.top .arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,.25);border-bottom-width:0}.popover.top .arrow:after{bottom:1px;margin-left:-10px;border-top-color:#fff;border-bottom-width:0;content:" "}.popover.right .arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,.25);border-left-width:0}.popover.right .arrow:after{bottom:-10px;left:1px;border-right-color:#fff;border-left-width:0;content:" "}.popover.bottom .arrow{top:-11px;left:50%;margin-left:-11px;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25);border-top-width:0}.popover.bottom .arrow:after{top:1px;margin-left:-10px;border-bottom-color:#fff;border-top-width:0;content:" "}.popover.left .arrow{top:50%;right:-11px;margin-top:-11px;border-left-color:#999;border-left-color:rgba(0,0,0,.25);border-right-width:0}.popover.left .arrow:after{right:1px;bottom:-10px;border-left-color:#fff;border-right-width:0;content:" "}.carousel{position:relative}
+.carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;padding-left:0;margin-left:-30%;text-align:center;list-style:none}.carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;cursor:pointer;background-color:rgba(0,0,0,0);border:1px solid #fff;border-radius:10px}.carousel-indicators .active{width:12px;height:12px;margin:0;background-color:#fff}
+.carousel-caption .btn{text-shadow:none}@media screen and (min-width:768px){
+.carousel-indicators{bottom:20px}}.clearfix:after,.clearfix:before{display:table;content:" "}.clearfix:after{clear:both}
+.hide{display:none!important}.show{display:block!important}
+.hidden{display:none!important;visibility:hidden!important}.affix{position:fixed}@-ms-viewport{width:device-width}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media (max-width:767px){}@media (min-width:768px) and (max-width:991px){}@media (min-width:992px) and (max-width:1199px){}@media (min-width:1200px){}@media print{}
+body{margin-top:50px;font-size:17px}.white,.white a{color:#999}
+.tagline{color:#fff;text-shadow:0 0 10px #000}footer{margin:50px 0}a.rollover-guy{background:url(/img/seksualnoe-obrazovanie-dlya-podrostkov-parnei-600.jpg);display:block;width:300px;height:300px;border-radius:50%}a.rollover-guy:hover{background-position:0 -300px;border-radius:50%}a.rollover-para{background:url(/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-i-parnei-600.jpg);display:block;width:300px;height:300px;border-radius:50%}a.rollover-para:hover{background-position:0 -300px;border-radius:50%}a.rollover-girl{background:url(/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-600.jpg);display:block;width:300px;height:300px;border-radius:50%}a.rollover-girl:hover{background-position:0 -300px;border-radius:50%}a.rollover-guy-200{background:url(/img/paren-400.jpg);display:block;width:200px;height:200px;border-radius:50%}a.rollover-guy-200:hover{background-position:0 -200px;border-radius:50%}a.rollover-para-200{background:url(/img/para-400.jpg);display:block;width:200px;height:200px;border-radius:50%}a.rollover-para-200:hover{background-position:0 -200px;border-radius:50%}a.rollover-girl-200{background:url(/img/devushka-400.jpg);display:block;width:200px;height:200px;border-radius:50%}a.rollover-girl-200:hover{background-position:0 -200px;border-radius:50%}
+.leftimg{float:left;margin:7px 7px 7px 0}#bg_image{width:100%;position:absolute}.bg_slider{width:100%;position:fixed}#placeholder{height:2000px}.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}.video embed,.video iframe,.video object{position:absolute;top:0;left:0;width:100%;height:100%}
+
+.hero #cafe-girl {
+    width: 100%;
+	height:400px;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+.hero #cafe-girl .inner {
+    padding-top: 50%; /* высота/ширина изображения */
+    display: block;
+    height: 0;
+}
+
+/* default screen, non-retina */
+.hero #cafe-girl { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg"); }
+
+
+@media only screen and (max-width: 320px) {
+  /* Small screen, non-retina */
+  .hero #cafe-girl { background-image: url("/ai-cache/270/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (                min-resolution: 192dpi) and (max-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 320px) {
+  /* Small screen, retina */
+  .hero #cafe-girl { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, non-retina */
+  .hero #cafe-girl { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 321px) and (max-width: 538px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 192dpi) and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, retina */
+  .hero #cafe-girl { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (                min-resolution: 192dpi) and (min-width: 539px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 539px) {
+  /* Large screen, retina */
+  .hero #cafe-gril { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg"); }
+}
+
+.hero #cafe-paren {
+    width: 100%;
+	height:400px;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+.hero #cafe-paren .inner {
+    padding-top: 50%; /* высота/ширина изображения */
+    display: block;
+    height: 0;
+}
+
+/* default screen, non-retina */
+.hero #cafe-paren { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg"); }
+
+
+@media only screen and (max-width: 320px) {
+  /* Small screen, non-retina */
+  .hero #cafe-paren { background-image: url("/ai-cache/270/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (                min-resolution: 192dpi) and (max-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 320px) {
+  /* Small screen, retina */
+  .hero #cafe-paren { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, non-retina */
+  .hero #cafe-paren { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 321px) and (max-width: 538px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 192dpi) and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, retina */
+  .hero #cafe-paren { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (                min-resolution: 192dpi) and (min-width: 539px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 539px) {
+  /* Large screen, retina */
+  .hero #cafe-paren { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg"); }
+}
+
+
+.hero #cafe-dvoe {
+    width: 100%;
+	height:400px;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+.hero #cafe-dvoe .inner {
+    padding-top: 50%; /* высота/ширина изображения */
+    display: block;
+    height: 0;
+}
+
+/* default screen, non-retina */
+.hero #cafe-dvoe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg"); }
+
+
+@media only screen and (max-width: 320px) {
+  /* Small screen, non-retina */
+  .hero #cafe-dvoe { background-image: url("/ai-cache/270/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (                min-resolution: 192dpi) and (max-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 320px) {
+  /* Small screen, retina */
+  .hero #cafe-dvoe { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, non-retina */
+  .hero #cafe-dvoe { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 321px) and (max-width: 538px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 192dpi) and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, retina */
+  .hero #cafe-dvoe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (                min-resolution: 192dpi) and (min-width: 539px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 539px) {
+  /* Large screen, retina */
+  .hero #cafe-dvoe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg"); }
+}
+
+.hero #cafe {
+    width: 100%;
+	height:400px;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+.hero #cafe .inner {
+    padding-top: 50%; /* высота/ширина изображения */
+    display: block;
+    height: 0;
+}
+
+/* default screen, non-retina */
+.hero #cafe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+
+
+@media only screen and (max-width: 320px) {
+  /* Small screen, non-retina */
+  .hero #cafe { background-image: url("/ai-cache/270/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (                min-resolution: 192dpi) and (max-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 320px) {
+  /* Small screen, retina */
+  .hero #cafe { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, non-retina */
+  .hero #cafe { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 321px) and (max-width: 538px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 192dpi) and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, retina */
+  .hero #cafe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (                min-resolution: 192dpi) and (min-width: 539px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 539px) {
+  /* Large screen, retina */
+  .hero #cafe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+}
+
+.hero #cafe-beach {
+    width: 100%;
+	height:400px;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+.hero #cafe-beach .inner {
+    padding-top: 50%; /* высота/ширина изображения */
+    display: block;
+    height: 0;
+}
+
+/* default screen, non-retina */
+.hero #cafe-beach { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg"); }
+
+
+@media only screen and (max-width: 320px) {
+  /* Small screen, non-retina */
+  .hero #cafe-beach { background-image: url("/ai-cache/270/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (max-width: 320px),
+only screen and (                min-resolution: 192dpi) and (max-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (max-width: 320px) {
+  /* Small screen, retina */
+  .hero #cafe-beach { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, non-retina */
+  .hero #cafe-beach { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 321px) and (max-width: 538px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 192dpi) and (min-width: 321px) and (max-width: 538px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 321px) and (max-width: 538px) {
+  /* Medium screen, retina */
+  .hero #cafe-beach { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg"); }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 539px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 539px),
+only screen and (                min-resolution: 192dpi) and (min-width: 539px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 539px) {
+  /* Large screen, retina */
+  .hero #cafe-beach { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg"); }
+}

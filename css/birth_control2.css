@@ -1,0 +1,469 @@
+/*! qTip2 v2.0.1-4-g (includes: svg ajax tips modal viewport imagemap ie6 / basic css3) | qtip2.com | Licensed MIT, GPL | Fri Jan 04 2013 04:05:40 */.qtip,.qtip{position:absolute;left:-28000px;top:-28000px;display:none;max-width:280px;min-width:50px;font-size:10.5px;line-height:12px;direction:ltr}.qtip-content{position:relative;padding:5px 9px;overflow:hidden;text-align:left;word-wrap:break-word}.qtip-titlebar{position:relative;padding:5px 35px 5px 10px;overflow:hidden;border-width:0 0 1px;font-weight:700}.qtip-titlebar+.qtip-content{border-top-width:0!important}.qtip-close{position:absolute;right:-9px;top:-9px;cursor:pointer;outline:medium none;border-width:1px;border-style:solid;border-color:transparent}.qtip-titlebar .qtip-close{right:4px;top:50%;margin-top:-9px}* html .qtip-titlebar .qtip-close{top:16px}.qtip-titlebar .ui-icon,.qtip-icon .ui-icon{display:block;text-indent:-1000em;direction:ltr;vertical-align:middle}.qtip-icon,.qtip-icon .ui-icon{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;text-decoration:none}.qtip-icon .ui-icon{width:18px;height:14px;text-align:center;text-indent:0;font:normal bold 10px/13px Tahoma,sans-serif;color:inherit;background:transparent none no-repeat -100em -100em}.qtip-focus{}.qtip-hover{}.qtip-default{border-width:1px;border-style:solid;border-color:#F1D031;background-color:#FFFFA3;color:#555}.qtip-default .qtip-titlebar{background-color:#FFEF93}.qtip-default .qtip-icon{border-color:#CCC;background:#F1F1F1;color:#777}.qtip-default .qtip-titlebar .qtip-close{border-color:#AAA;color:#111}/*! Light tooltip style */.qtip-light{background-color:#fff;border-color:#E2E2E2;color:#454545}.qtip-light .qtip-titlebar{background-color:#f1f1f1}/*! Dark tooltip style */.qtip-dark{background-color:#505050;border-color:#303030;color:#f3f3f3}.qtip-dark .qtip-titlebar{background-color:#404040}.qtip-dark .qtip-icon{border-color:#444}.qtip-dark .qtip-titlebar .ui-state-hover{border-color:#303030}/*! Cream tooltip style */.qtip-cream{background-color:#FBF7AA;border-color:#F9E98E;color:#A27D35}.qtip-cream .qtip-titlebar{background-color:#F0DE7D}.qtip-cream .qtip-close .qtip-icon{background-position:-82px 0}/*! Red tooltip style */.qtip-red{background-color:#F78B83;border-color:#D95252;color:#912323}.qtip-red .qtip-titlebar{background-color:#F06D65}.qtip-red .qtip-close .qtip-icon{background-position:-102px 0}.qtip-red .qtip-icon{border-color:#D95252}.qtip-red .qtip-titlebar .ui-state-hover{border-color:#D95252}/*! Green tooltip style */.qtip-green{background-color:#CAED9E;border-color:#90D93F;color:#3F6219}.qtip-green .qtip-titlebar{background-color:#B0DE78}.qtip-green .qtip-close .qtip-icon{background-position:-42px 0}/*! Blue tooltip style */.qtip-blue{background-color:#E5F6FE;border-color:#ADD9ED;color:#5E99BD}.qtip-blue .qtip-titlebar{background-color:#D0E9F5}.qtip-blue .qtip-close .qtip-icon{background-position:-2px 0}.qtip-shadow{-webkit-box-shadow:1px 1px 3px 1px rgba(0,0,0,.15);-moz-box-shadow:1px 1px 3px 1px rgba(0,0,0,.15);box-shadow:1px 1px 3px 1px rgba(0,0,0,.15)}.qtip-rounded,.qtip-tipsy,.qtip-bootstrap{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.qtip-rounded .qtip-titlebar{-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.qtip-youtube{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-webkit-box-shadow:0 0 3px #333;-moz-box-shadow:0 0 3px #333;box-shadow:0 0 3px #333;color:#fff;border-width:0;background:#4A4A4A;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#4A4A4A),color-stop(100%,black));background-image:-webkit-linear-gradient(top,#4A4A4A 0,black 100%);background-image:-moz-linear-gradient(top,#4A4A4A 0,black 100%);background-image:-ms-linear-gradient(top,#4A4A4A 0,black 100%);background-image:-o-linear-gradient(top,#4A4A4A 0,black 100%)}.qtip-youtube .qtip-titlebar{background-color:#4A4A4A;background-color:rgba(0,0,0,0)}.qtip-youtube .qtip-content{padding:.75em;font:12px arial,sans-serif;filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#4a4a4a, EndColorStr=#000000);-ms-filter:"progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#4a4a4a, EndColorStr=#000000);"}.qtip-youtube .qtip-icon{border-color:#222}.qtip-youtube .qtip-titlebar .ui-state-hover{border-color:#303030}.qtip-jtools{background:#232323;background:rgba(0,0,0,.7);background-image:-webkit-gradient(linear,left top,left bottom,from(#717171),to(#232323));background-image:-moz-linear-gradient(top,#717171,#232323);background-image:-webkit-linear-gradient(top,#717171,#232323);background-image:-ms-linear-gradient(top,#717171,#232323);background-image:-o-linear-gradient(top,#717171,#232323);border:2px solid #ddd;border:2px solid rgba(241,241,241,1);-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-webkit-box-shadow:0 0 12px #333;-moz-box-shadow:0 0 12px #333;box-shadow:0 0 12px #333}.qtip-jtools .qtip-titlebar{background-color:transparent;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171, endColorstr=#4A4A4A);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171, endColorstr=#4A4A4A)"}.qtip-jtools .qtip-content{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A, endColorstr=#232323);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A, endColorstr=#232323)"}.qtip-jtools .qtip-titlebar,.qtip-jtools .qtip-content{background:transparent;color:#fff;border:0 dashed transparent}.qtip-jtools .qtip-icon{border-color:#555}.qtip-jtools .qtip-titlebar .ui-state-hover{border-color:#333}.qtip-cluetip{-webkit-box-shadow:4px 4px 5px rgba(0,0,0,.4);-moz-box-shadow:4px 4px 5px rgba(0,0,0,.4);box-shadow:4px 4px 5px rgba(0,0,0,.4);background-color:#D9D9C2;color:#111;border:0 dashed transparent}.qtip-cluetip .qtip-titlebar{background-color:#87876A;color:#fff;border:0 dashed transparent}.qtip-cluetip .qtip-icon{border-color:#808064}.qtip-cluetip .qtip-titlebar .ui-state-hover{border-color:#696952;color:#696952}.qtip-tipsy{background:#000;background:rgba(0,0,0,.87);color:#fff;border:0 solid transparent;font-size:11px;font-family:'Lucida Grande',sans-serif;font-weight:700;line-height:16px;text-shadow:0 1px black}.qtip-tipsy .qtip-titlebar{padding:6px 35px 0 10;background-color:transparent}.qtip-tipsy .qtip-content{padding:6px 10}.qtip-tipsy .qtip-icon{border-color:#222;text-shadow:none}.qtip-tipsy .qtip-titlebar .ui-state-hover{border-color:#303030}.qtip-tipped{border:3px solid #959FA9;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-color:#F9F9F9;color:#454545;font-weight:400;font-family:serif}.qtip-tipped .qtip-titlebar{border-bottom-width:0;color:#fff;background:#3A79B8;background-image:-webkit-gradient(linear,left top,left bottom,from(#3A79B8),to(#2E629D));background-image:-webkit-linear-gradient(top,#3A79B8,#2E629D);background-image:-moz-linear-gradient(top,#3A79B8,#2E629D);background-image:-ms-linear-gradient(top,#3A79B8,#2E629D);background-image:-o-linear-gradient(top,#3A79B8,#2E629D);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8, endColorstr=#2E629D);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8, endColorstr=#2E629D)"}.qtip-tipped .qtip-icon{border:2px solid #285589;background:#285589}.qtip-tipped .qtip-icon .ui-icon{background-color:#FBFBFB;color:#555}.qtip-bootstrap{font-size:14px;line-height:20px;color:#333;padding:1px;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);-moz-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);-webkit-background-clip:padding-box;-moz-background-clip:padding;background-clip:padding-box}.qtip-bootstrap .qtip-titlebar{padding:8px 14px;margin:0;font-size:14px;font-weight:400;line-height:18px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.qtip-bootstrap .qtip-titlebar .qtip-close{right:11px;top:45%;border-style:none}.qtip-bootstrap .qtip-content{padding:9px 14px}.qtip-bootstrap .qtip-icon{background:transparent}.qtip-bootstrap .qtip-icon .ui-icon{width:auto;height:auto;float:right;font-size:20px;font-weight:700;line-height:18px;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;filter:alpha(opacity=20)}.qtip-bootstrap .qtip-icon .ui-icon:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;filter:alpha(opacity=40)}.qtip:not(.ie9haxors) div.qtip-content,.qtip:not(.ie9haxors) div.qtip-titlebar{filter:none;-ms-filter:none}.qtip .qtip-tip{margin:0 auto;overflow:hidden;z-index:10}.qtip .qtip-tip,.qtip .qtip-tip .qtip-vml{position:absolute;color:#123456;background:transparent;border:0 dashed transparent}.qtip .qtip-tip canvas{top:0;left:0}.qtip .qtip-tip .qtip-vml{behavior:url(#default#VML);display:inline-block;visibility:visible}#qtip-overlay{position:fixed;left:-10000em;top:-10000em}#qtip-overlay.blurs{cursor:pointer}#qtip-overlay div{position:absolute;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:.7;filter:alpha(opacity=70);-ms-filter:"alpha(Opacity=70)"}.qtipmodal-ie6fix{position:absolute!important}
+
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+}
+.bce_banner{
+	display:block;
+	width:958px;
+	}
+.bce_yellow_banner{
+	background:url(/img/kontrol/bce_banner_bg.png) repeat-x;
+	height:83px;
+	width:650px;
+	display:inline-block;
+	float:left;
+	}
+.bce_yellow_header{
+	font-family: 'PT Sans';
+	font-size:45px;
+	font-weight:bold;
+	color:#1b1012;
+	text-align:center;
+	margin-top:16px;
+   margin-left:5px;
+}
+.bce_banner_divider{
+	display:inline-block;
+	height:83px;
+	width:18px;
+	float:left;
+	}
+.bce_blue_banner{
+	background:url(/img/kontrol/bce_banner_bg2.png) repeat-x;
+	height:83px;
+	width:290px;
+	display:inline-block;
+	float:left;
+	}
+.bce_banner_shadow img{
+   vertical-align: top;
+	}
+.bce_cat_header{
+	font-family: 'PT Sans', cursive;
+	font-size: 20px;
+	color:#343a39;
+	text-align:center;
+	height: 17px;
+	margin-top: 8px;
+	text-transform: uppercase;
+	}
+.bce_cat_group{
+	text-align:center;
+	height:58px;
+	padding-left:10px;
+	}
+.bce_cat_group a img{
+	border:none;}
+.bce_cat_group .bce_cat_1{
+	background:url(/img/kontrol/cat_1.png) no-repeat;
+	width:51px;
+	height:55px;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    float: left;
+    cursor: pointer;
+	}
+.bce_cat_group .bce_cat_1:hover, .bce_cat_group .bce_cat_1.active{
+	background:url(/img/kontrol/cat_1_over.png) no-repeat;
+	}
+.bce_cat_group .bce_cat_2{
+	background:url(/img/kontrol/cat_2.png) no-repeat;
+	width:59px;
+	height:55px;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    float: left;
+    cursor: pointer;
+	}
+.bce_cat_group .bce_cat_2:hover, .bce_cat_group .bce_cat_2.active{
+	background:url(/img/kontrol/cat_2_over.png) no-repeat;
+	}
+.bce_cat_group .bce_cat_3{
+	background:url(/img/kontrol/cat_3.png) no-repeat;
+	width:51px;
+	height:55px;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    float: left;
+    cursor: pointer;
+	}
+.bce_cat_group .bce_cat_3:hover, .bce_cat_group .bce_cat_3.active{
+	background:url(/img/kontrol/cat_3_over.png) no-repeat;
+	}
+.bce_cat_group .bce_cat_4{
+	background:url(/img/kontrol/cat_4.png) no-repeat;
+	width:56px;
+	height:55px;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    float: left;
+    cursor: pointer;
+	}
+.bce_cat_group .bce_cat_4:hover, .bce_cat_group .bce_cat_4.active{
+	background:url(/img/kontrol/cat_4_over.png) no-repeat;
+	}
+
+.bce_cat_group .bce_cat_5{
+	background:url(/img/kontrol/cat_5.png) no-repeat;
+	width:56px;
+	height:55px;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    float: left;
+    cursor: pointer;
+	}
+.bce_cat_group .bce_cat_5:hover, .bce_cat_group .bce_cat_5.active{
+	background:url(/img/kontrol/cat_5_over.png) no-repeat;
+	}
+
+.bce_methods_bg{
+	background:url(/img/kontrol/methods_bg.png) repeat;
+	min-height:700px;
+	width:958px;
+	margin-top:-17px;
+	padding-top: 20px;
+	display:block;
+	}
+.bce_methods_bg img{
+	border:none;
+	}
+.bce_methods_bg_left{
+	width:293px;
+	display:inline-block;
+	float:left;
+	padding-left:20px;
+	}
+.bce_methods_bg_center{
+	width:260px;
+	display:inline-block;
+	float:left;
+	margin-left:-30px;
+	}
+.bce_methods_bg_right{
+	width:399px;
+	display:inline-block;
+	float:left;
+	padding-right:16px;
+	margin-left: -16px;
+	}
+.bce_method .bce_meth_waiting{
+	background:url(/img/kontrol/waiting.png) no-repeat;
+	width:294px;
+	height:292px;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+	}
+.bce_method.normal .bce_meth_waiting:hover, .active .bce_meth_waiting{
+	background:url(/img/kontrol/waiting_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_fc{
+	background:url(/img/kontrol/female-condom.png) no-repeat;
+	width:251px;
+	height:317px;
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+	}
+.bce_method.normal .bce_meth_fc:hover, .active .bce_meth_fc{
+	background:url(/img/kontrol/female-condom_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_iud_skyla{
+	background:url(/img/kontrol/iud-s.png) no-repeat;
+	width:70px;
+	height:140px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 40px;
+	}
+.bce_method.normal .bce_meth_iud_skyla:hover, .active .bce_meth_iud_skyla{
+	background:url(/img/kontrol/iud-s_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_iud_paragard{
+	background:url(/img/kontrol/iud-p.png) no-repeat;
+	width:83px;
+	height:153px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 0px;
+	}
+.bce_method.normal .bce_meth_iud_paragard:hover, .active .bce_meth_iud_paragard{
+	background:url(/img/kontrol/iud-p_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_iud_mirena{
+	background:url(/img/kontrol/iud-m.png) no-repeat;
+	width:73px;
+	height:145px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 0px;
+	}
+.bce_method.normal .bce_meth_iud_mirena:hover, .active .bce_meth_iud_mirena{
+	background:url(/img/kontrol/iud-m_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_ring{
+	background:url(/img/kontrol/ring.png) no-repeat;
+	width:127px;
+	height:121px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+	}
+.bce_method.normal .bce_meth_ring:hover, .active .bce_meth_ring{
+	background:url(/img/kontrol/ring_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_patch{
+	background:url(/img/kontrol/patch.png) no-repeat;
+	width:96px;
+	height:94px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+	}
+.bce_method.normal .bce_meth_patch:hover, .active .bce_meth_patch{
+	background:url(/img/kontrol/patch_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_diaphragm{
+	background:url(/img/kontrol/diaphragm.png) no-repeat;
+	width:194px;
+	height:350px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 40px;
+	}
+.bce_method.normal .bce_meth_diaphragm:hover, .active .bce_meth_diaphragm{
+	background:url(/img/kontrol/diaphragm_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_implanon{
+	background:url(/img/kontrol/implanon.png) no-repeat;
+	width:62px;
+	height:86px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 60px;
+	}
+.bce_method.normal .bce_meth_implanon:hover, .active .bce_meth_implanon{
+	background:url(/img/kontrol/implanon_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_shot{
+	background:url(/img/kontrol/shot.png) no-repeat;
+	width:254px;
+	height:103px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 40px;
+	}
+.bce_method.normal .bce_meth_shot:hover, .active .bce_meth_shot{
+	background:url(/img/kontrol/shot_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_condom{
+	background:url(/img/kontrol/condom.png) no-repeat;
+	width:122px;
+	height:181px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 50px;
+	}
+.bce_method.normal .bce_meth_condom:hover, .active .bce_meth_condom{
+	background:url(/img/kontrol/condom_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_sponge{
+	background:url(/img/kontrol/sponge.png) no-repeat;
+	width:153px;
+	height:141px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 25px;
+	}
+.bce_method.normal .bce_meth_sponge:hover, .active .bce_meth_sponge{
+	background:url(/img/kontrol/sponge_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_pill{
+	background:url(/img/kontrol/pill.png) no-repeat;
+	width:204px;
+	height:300px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 35px;
+	}
+.bce_method.normal .bce_meth_pill:hover, .active .bce_meth_pill{
+	background:url(/img/kontrol/pill_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_pull-out{
+	background:url(/img/kontrol/pull-out.png) no-repeat;
+	width:274px;
+	height:235px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+	}
+.bce_method.normal .bce_meth_pull-out:hover, .active .bce_meth_pull-out{
+	background:url(/img/kontrol/pull-out_hover.png) no-repeat;
+	cursor: pointer;
+	}
+.bce_method .bce_meth_emergency{
+	background:url(/img/kontrol/emergency.png) no-repeat;
+	width:139px;
+	height:142px;
+    display:inline-block;
+    margin-top: 1px;
+    vertical-align: text-top;
+    margin-left: 0px;
+	}
+.bce_method.normal .bce_meth_emergency:hover, .active .bce_meth_emergency{
+	background:url(/img/kontrol/emergency_hover.png) no-repeat;
+	cursor: pointer;
+	}
+/*
+.blurred-method div {
+   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+*/
+.pull-right{
+	float:right;
+	}
+.pull-left{
+	float:left;
+	}
+/* Qtip style */
+.qtip
+{
+   width: 280px;
+}
+.qtip_style, .qtip-content{
+	background: url(/img/kontrol/callsout_bg.png) repeat;
+	border-color:none;
+	box-shadow: -4px 5px #5d5457;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	color: #333333;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 5px 10px;
+	font-family: 'PT Sans', cursive;
+	color:#343a39;
+	font-weight: bold;
+	border-radius: 0px 0px 20px 20px;
+	-webkit-border-bottom-right-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+   -moz-border-radius-bottomright: 20px;
+   -moz-border-radius-bottomleft: 20px;
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+	}
+.qtip_style_header, .qtip-title{
+	font-family:'PT Sans';
+	font-size:21px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding: 10px;
+	letter-spacing: 2px;
+	text-transform:uppercase;
+	line-height: 21px;
+	}
+.qtip_style_cross{
+	background:url(/img/kontrol/callsout_cross.png) right top no-repeat;
+	}
+
+.qtip-titlebar
+{
+  background: url(/img/kontrol/callsout_bg.png) repeat;
+  padding:5px;
+  box-shadow: -4px 5px #5d5457;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  /*border-top: 1px solid rgba(0, 0, 0, 0.2);*/
+  border-radius:20px 20px 0px 0px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.learn-more-text
+{
+   text-align: right;
+   padding:10px;
+   cursor:pointer;
+}
+.learn-more-text a
+{
+   font-family: Helvetica,Arial,sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+   color:#ffe26A;
+   font-size: 12px;
+}
+.qtip-default {
+    background-color:transparent;
+    border-color:transparent;
+    border-style:none;
+    border-width: 0px;
+    color: #555555;
+}
+
+.qtip .qtip-tip
+{
+	background:#72C0C2;
+	width:22px;
+	border: 25px solid #72C0C2;
+}
+
+.qtip-icon .ui-icon
+{
+   color: red;
+   background: url(/img/kontrol/callsout_cross.png) no-repeat transparent;
+   background-color: none;
+}
+
+.qtip-default .qtip-titlebar .qtip-close
+{
+   background: none;
+   border: none;
+   text-decoration: none;
+}
+
+.qtip-default .qtip-icon
+{
+   background: none;
+}
+
+.clearfix
+{
+   clear: both;
+}
