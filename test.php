@@ -354,7 +354,7 @@ s.parentNode.insertBefore(hcc, s.nextSibling);
 <br />
 <p>
 <!--LiveInternet counter--><script type="text/javascript"><!--
-document.write("<a href='http://www.liveinternet.ru/click' "+
+document.write("<a href='https://www.liveinternet.ru/click' "+
 "target=_blank><img src='//counter.yadro.ru/hit?t45.10;r"+
 escape(document.referrer)+((typeof(screen)=="undefined")?"":
 ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
@@ -365,7 +365,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 //--></script><!--/LiveInternet-->
 
 <!-- Yandex.Metrika informer -->
-<a href="http://metrika.yandex.ru/stat/?id=23378290&amp;from=informer"
+<a href="https://metrika.yandex.ru/stat/?id=23378290&amp;from=informer"
 target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/23378290/2_1_FFFFFFFF_FFFFFFFF_0_pageviews"
 style="width:80px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" /></a>
 <!-- /Yandex.Metrika informer -->
@@ -376,26 +376,26 @@ var hotlog_counter_id = 2327611;
 var hotlog_hit = 25;
 var hotlog_counter_type = 725;
 </script>
-<script src="http://js.hotlog.ru/counter.js" type="text/javascript"></script>
+<script src="https://js.hotlog.ru/counter.js" type="text/javascript"></script>
 <noscript>
-<a href="http://click.hotlog.ru/?2327611" target="_blank">
-<img src="http://hit25.hotlog.ru/cgi-bin/hotlog/count?s=2327611&im=725" border="0"
+<a href="https://click.hotlog.ru/?2327611" target="_blank">
+<img src="https://hit25.hotlog.ru/cgi-bin/hotlog/count?s=2327611&im=725" border="0"
 title="HotLog" alt="HotLog"></a>
 </noscript>
 <!-- /HotLog -->
 
 <!-- Rating@Mail.ru logo -->
-<a target="_blank" href="http://top.mail.ru/jump?from=2542832">
+<a target="_blank" href="https://top.mail.ru/jump?from=2542832">
 <img src="//top-fwz1.mail.ru/counter?id=2542832;t=410;l=1" 
 style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
 <!-- //Rating@Mail.ru logo -->
 
-<a href="http://www.domkadrov.ru/candsearch.php?compfunction=126ba" title="Вакансии специалиста по работе с молодежью, по делам молодежи" target="_blank"><img src="http://www.domkadrov.ru/images/rus8831_.gif" style="border: 1px solid #0066ff;" alt="Вакансии специалиста по работе с молодежью, по делам молодежи" /></a>
+<a href="https://www.domkadrov.ru/candsearch.php?compfunction=126ba" title="Вакансии специалиста по работе с молодежью, по делам молодежи" target="_blank"><img src="https://www.domkadrov.ru/images/rus8831_.gif" style="border: 1px solid #0066ff;" alt="Вакансии специалиста по работе с молодежью, по делам молодежи" /></a>
 
 <!-- begin of Top100 code -->
-<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?3045070"></script>
+<script id="top100Counter" type="text/javascript" src="https://counter.rambler.ru/top100.jcn?3045070"></script>
 <noscript>
-<img src="http://counter.rambler.ru/top100.cnt?3045070" alt="" width="1" height="1" border="0" />
+<img src="https://counter.rambler.ru/top100.cnt?3045070" alt="" width="1" height="1" border="0" />
 </noscript>
 <!-- end of Top100 code -->
 </div>
@@ -451,8 +451,8 @@ style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
 <img src="img/polovoe-vospitanie-podrostkov.png" width="200" height="630" alt="По материалам Министерства здравоохранения РФ">
 <br />
 <br />
-<a href=http://allbest.ru/union/d/a/?103299 target=_blank>
-<img src=http://allbest.ru/union/i/fc/ab0.png width=88 height=31 alt="Союз образовательных сайтов" border=0></a>
+<a href=https://allbest.ru/union/d/a/?103299 target=_blank>
+<img src=https://allbest.ru/union/i/fc/ab0.png width=88 height=31 alt="Союз образовательных сайтов" border=0></a>
 </center>
 <br />
 <ul style="height:40px;list-style:none;margin:0;padding:0;">
@@ -475,18 +475,18 @@ style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
 #subscribe_form-blue {width:220px;}
 #subscribe_form-blue .fbba-blue,.fbbb-blue,.fbbc-blue,.fbbd-blue {background:#e1ecf3;}
 </style>
-<form target="_blank" action="http://subscribe.ru/member/quick" method="get">
+<form target="_blank" action="https://subscribe.ru/member/quick" method="get">
 <input type="hidden" name="action" value="quick">
 <input type="hidden" name="src" value="list_home.children.sexeducation">
 <div id="subscribe_form-blue"><b class="fbba-blue"></b><b class="fbbb-blue"></b><b class="fbbc-blue"></b><b class="fbbd-blue"></b>
-<table style="background: url(http://image.subscribe.ru/subut/s.png) no-repeat #e1ecf3;" cellspacing=0 cellpadding=0>
+<table style="background: url(https://image.subscribe.ru/subut/s.png) no-repeat #e1ecf3;" cellspacing=0 cellpadding=0>
 <tr><td colspan=2 style="padding: 5px 10px 5px 10px;"><INPUT TYPE=hidden NAME=grp VALUE="home.children.sexeducation">
-<a href="http://subscribe.ru/catalog/home.children.sexeducation" target="_blank" style="font-weight:bold;color: #000000;font-family:Trebuchet MS, Helvetica, sans-serif;font-size:14px;">Два подростка. Половое воспитание детей и школьников</a>
+<a href="https://subscribe.ru/catalog/home.children.sexeducation" target="_blank" style="font-weight:bold;color: #000000;font-family:Trebuchet MS, Helvetica, sans-serif;font-size:14px;">Два подростка. Половое воспитание детей и школьников</a>
 </td></tr>
 <tr><td colspan=2 style="padding: 5px 10px 5px 10px;"><input style="border:1px solid #003366;color:#666666;width:200px;background-color:#fff;font-family:Trebuchet MS, Verdana, sans-serif;font-size:12px;" type="text" name="email" id="email" value="ваш e-mail" onFocus="this.value = '';return false;"/></td></tr>
 <tr>
   <td style="padding: 5px 10px 5px 10px;">&nbsp;</td>
-  <td align="right" style="padding: 5px 10px 5px 10px;"><input  type="submit" value="" style="background: url(http://image.subscribe.ru/subut/button-blue.gif) no-repeat;border:none;width:93px;height:21px;font-size:12px;font-family:Trebuchet MS, Verdana, Arial; width:100px;"></td>
+  <td align="right" style="padding: 5px 10px 5px 10px;"><input  type="submit" value="" style="background: url(https://image.subscribe.ru/subut/button-blue.gif) no-repeat;border:none;width:93px;height:21px;font-size:12px;font-family:Trebuchet MS, Verdana, Arial; width:100px;"></td>
 </tr>
 <tr><td align="center" colspan=2><A HREF="mailto:home.children.sexeducation-sub@subscribe.ru?subject=subscribe" style="color: #000000;font-family:Verdana, sans-serif;font-size:10px;">Подписаться письмом</A></td></tr>
 </table>
@@ -530,7 +530,7 @@ style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
 
 
  <!-- JavaScript -->
- 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="gzip-js/jquery-shuffleLetters.js"></script>
 	<script async src="gzip-js/default.js"></script>
  

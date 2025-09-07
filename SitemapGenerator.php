@@ -75,11 +75,11 @@ class SitemapGenerator {
      * @access private
      */
     private $searchEngines = array(
-        array("http://search.yahooapis.com/SiteExplorerService/V1/updateNotification?appid=USERID&url=",
-        "http://search.yahooapis.com/SiteExplorerService/V1/ping?sitemap="),
-        "http://www.google.com/webmasters/tools/ping?sitemap=",
-        "http://submissions.ask.com/ping?sitemap=",
-        "http://www.bing.com/webmaster/ping.aspx?siteMap="
+        array("https://search.yahooapis.com/SiteExplorerService/V1/updateNotification?appid=USERID&url=",
+        "https://search.yahooapis.com/SiteExplorerService/V1/ping?sitemap="),
+        "https://www.google.com/webmasters/tools/ping?sitemap=",
+        "https://submissions.ask.com/ping?sitemap=",
+        "https://www.bing.com/webmaster/ping.aspx?siteMap="
     );
     /**
      * Array with urls
@@ -171,17 +171,17 @@ class SitemapGenerator {
                           <!-- generated-on="'.date('c').'" -->';
         $sitemapHeader = '<?xml version="1.0" encoding="UTF-8"?>'.$generatorInfo.'
                             <urlset
-                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                                http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-                                xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+                                xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+                                xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+                                https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+                                xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
                          </urlset>';
         $sitemapIndexHeader = '<?xml version="1.0" encoding="UTF-8"?>'.$generatorInfo.'
                                 <sitemapindex
-                                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                                    http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
-                                    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+                                    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+                                    xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+                                    https://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
+                                    xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
                               </sitemapindex>';
         foreach(array_chunk($this->urls,$this->maxURLsPerSitemap) as $sitemap) {
             $xml = new SimpleXMLElement($sitemapHeader);

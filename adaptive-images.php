@@ -1,9 +1,9 @@
 <?php
 /* PROJECT INFO --------------------------------------------------------------------------------------------------------
    Version:   1.5.2
-   Changelog: http://adaptive-images.com/changelog.txt
+   Changelog: https://adaptive-images.com/changelog.txt
 
-   Homepage:  http://adaptive-images.com
+   Homepage:  https://adaptive-images.com
    GitHub:    https://github.com/MattWilcox/Adaptive-Images
    Twitter:   @responsiveimg
 
@@ -175,7 +175,7 @@ function generateImage($source_file, $cache_file, $resolution) {
   ImageDestroy($src);
 
   // sharpen the image?
-  // NOTE: requires PHP compiled with the bundled version of GD (see http://php.net/manual/en/function.imageconvolution.php)
+  // NOTE: requires PHP compiled with the bundled version of GD (see https://php.net/manual/en/function.imageconvolution.php)
   if($sharpen == TRUE && function_exists('imageconvolution')) {
     $intSharpness = findSharp($width, $new_width);
     $arrMatrix = array(
