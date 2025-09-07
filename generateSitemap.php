@@ -10,16 +10,16 @@
         include 'SitemapGenerator.php';
 
         // create object
-        $sitemap = new SitemapGenerator("http://2podrostka.ru/");
+        $sitemap = new SitemapGenerator("https://2podrostka.ru/");
 
         // add urls
-        $sitemap->addUrl("http://2podrostka.ru",                date('c'),  'daily',    '1');
-        $sitemap->addUrl("http://2podrostka.ru/infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.php",          date('c'),  'daily',    '0.5');
-        $sitemap->addUrl("http://2podrostka.ru/kontrol-rozhdaemosti-metody-kontracepcii.php",          date('c'),  'daily');
-        $sitemap->addUrl("http://2podrostka.ru/mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.php",          date('c'));
-        $sitemap->addUrl("http://2podrostka.ru/polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.php");
-        $sitemap->addUrl("http://2podrostka.ru/polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.php",  date('c'),  'daily',    '0.4');
-        $sitemap->addUrl("http://2podrostka.ru/pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.php",  date('c'),  'daily');
+        $sitemap->addUrl("https://2podrostka.ru",                date('c'),  'daily',    '1');
+        $sitemap->addUrl("https://2podrostka.ru/infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.php",          date('c'),  'daily',    '0.5');
+        $sitemap->addUrl("https://2podrostka.ru/kontrol-rozhdaemosti-metody-kontracepcii.php",          date('c'),  'daily');
+        $sitemap->addUrl("https://2podrostka.ru/mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.php",          date('c'));
+        $sitemap->addUrl("https://2podrostka.ru/polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.php");
+        $sitemap->addUrl("https://2podrostka.ru/polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.php",  date('c'),  'daily',    '0.4');
+        $sitemap->addUrl("https://2podrostka.ru/pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.php",  date('c'),  'daily');
 
         // create sitemap
         $sitemap->createSitemap();

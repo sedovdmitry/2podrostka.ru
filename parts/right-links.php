@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="http://2podrostka.ru/polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html" class="rollover-deti-200"></a>
-  <h3><a href="http://2podrostka.ru/polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html">Половое воспитание в семье</a></h3>
+  <a href="/polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html" class="rollover-deti-200"></a>
+  <h3><a href="/polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html">Половое воспитание в семье</a></h3>
   <br />
   <a href="kontrol-rozhdaemosti-metody-kontracepcii.html" class="rollover-panel-200"></a>
   <h3><a href="kontrol-rozhdaemosti-metody-kontracepcii.html">Методы контрацепции, интерактивная доска</a></h3>

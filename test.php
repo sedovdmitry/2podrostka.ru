@@ -17,19 +17,19 @@
 <link rel="author" href="https://plus.google.com/101802807037519023635" />	
 <link rel="publisher" href="https://plus.google.com/101802807037519023635" />
 <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
-<link rel="alternate" hreflang="ru" href="http://2podrostka.ru" />
+<link rel="alternate" hreflang="ru" href="https://2podrostka.ru" />
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="2podrostka.ru" />
-<meta name="twitter:title" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов.: http://2podrostka.ru" />
-<meta name="twitter:description" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов: http://2podrostka.ru" />
-<meta name="twitter:url" content="http://2podrostka.ru" />
+<meta name="twitter:title" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов.: https://2podrostka.ru" />
+<meta name="twitter:description" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов: https://2podrostka.ru" />
+<meta name="twitter:url" content="https://2podrostka.ru" />
 
 <meta name="og:title" content="Половое воспитание, сексуальное образование школьников-подростков"/>
 <meta name="og:type" content="website"/>
-<meta name="og:url" content="http://2podrostka.ru"/>
+<meta name="og:url" content="https://2podrostka.ru"/>
 <meta name="og:site_name" content="2podrostka.ru"/>
-<meta name="og:description" content="К 15 годам 41% девушек в России занимались сексом. 42% беременностей – аборты. Два подростка: http://2podrostka.ru" />
+<meta name="og:description" content="К 15 годам 41% девушек в России занимались сексом. 42% беременностей – аборты. Два подростка: https://2podrostka.ru" />
 
  <style>
  body {
@@ -164,7 +164,7 @@ _tmr.push({id: "2542832", type: "pageView", start: (new Date()).getTime()});
  <span class="icon-bar"></span>
  <span class="icon-bar"></span>
  </button>
- <a class="navbar-brand" href="http://2podrostka.ru/"><span class="glyphicon glyphicon-home white"></span> 12+ Половое воспитание</a>
+ <a class="navbar-brand" href="https://2podrostka.ru/"><span class="glyphicon glyphicon-home white"></span> 12+ Половое воспитание</a>
  </div>
 
 
@@ -305,10 +305,10 @@ _tmr.push({id: "2542832", type: "pageView", start: (new Date()).getTime()});
 	 <p>Мы решили перепечатать и сделать этот сайт электронной версии материалов по <b>половому (сексуальному) воспитанию подростков</b>.</p>
  
 	 <br />
-	 <p><big>Вы можете уберечь детей и подростков от больших неприятностей, если расскажите о сайте <a href="http://2podrostka.ru">2podrostka.ru</a> в социальных сетях:</big></p>
+	 <p><big>Вы можете уберечь детей и подростков от больших неприятностей, если расскажите о сайте <a href="https://2podrostka.ru">2podrostka.ru</a> в социальных сетях:</big></p>
 	 <br />
 	 
-<div class="social-likes" data-url="http://2podrostka.ru">
+<div class="social-likes" data-url="https://2podrostka.ru">
 	<div class="twitter" data-via="2sexeducation" data-related="Половое воспитание детей, сексуальное образование школьников" title="Поделиться ссылкой в Твиттере">Twitter</div>
 	<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
 	<div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
@@ -333,7 +333,7 @@ s.parentNode.insertBefore(hcc, s.nextSibling);
 
  <footer>
 
- <center><p>Все права защищены <b><a href="http://2podrostka.ru">2podrostka.ru</a></b></a> – <a href="http://2podrostka.ru"><b>Половое воспитание</b></a>
+ <center><p>Все права защищены <b><a href="https://2podrostka.ru">2podrostka.ru</a></b></a> – <a href="https://2podrostka.ru"><b>Половое воспитание</b></a>
 	<center><p>&copy; Проект для муниципального центра по половому воспитанию подростков, 2013-2014</p></center>
 	<center><p>При копировании материалов ссылка на сайт обязательна.</p></center>
 	<p></p><br />
@@ -441,7 +441,7 @@ style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
 	</address>
 	<address>
 	<abbr title="Официальный сайт">Сайт: <u>balmolod.ru</u></abbr><br>
-	<abbr title="Cайт о половом воспитании подростков">Сайт: <a itemprop="url" href="http://2podrostka.ru">2podrostka.ru</a></abbr><br>
+	<abbr title="Cайт о половом воспитании подростков">Сайт: <a itemprop="url" href="https://2podrostka.ru">2podrostka.ru</a></abbr><br>
 	<abbr title="Телефон">Тел/факс:</abbr> +7(8453) 33-47-15<br>
 	<abbr title="Email">E:</abbr> <a href="mailto:2podrostka@gmail.com">2podrostka@gmail.com</a>
 	 </address>

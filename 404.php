@@ -18,10 +18,10 @@
     <!-- Твиттер -->
     <meta name="twitter:title" content="Половое воспитание, сексуальное образование подростков" />
     <meta name="twitter:description" content="Два подростка - про переходный возраст подростков, половое воспитание и сексуальные отношения между подростками" />
-    <meta name="twitter:url" content="http://2podrostka.ru" />
+    <meta name="twitter:url" content="https://2podrostka.ru" />
     <meta name="og:title" content="Ошибка 404. Половое воспитание, сексуальное образование подростков"/>
     <meta name="og:type" content="website"/>
-    <meta name="og:url" content="http://2podrostka.ru"/>
+    <meta name="og:url" content="https://2podrostka.ru"/>
     <meta name="og:site_name" content="2podrostka.ru"/>
     <meta name="og:description" content="Два подростка - про переходный возраст подростков, половое воспитание и сексуальные отношения между подростками" />
     <title>Ошибка 404. Страница не найдена</title>

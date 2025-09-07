@@ -1,1 +1,96 @@
-body{margin-top:50px;font-size:17px}.white,.white a{color:#999}.business-header{height:400px;background:url(http://2podrostka.ru/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg) center center no-repeat;background-size:cover}.business-header-girl{height:400px;background:url(http://2podrostka.ru/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg) center center no-repeat;background-size:cover}.business-header-para{height:400px;background:url(http://2podrostka.ru/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg) center center no-repeat;background-size:cover}.business-header-guy{height:400px;background:url(http://2podrostka.ru/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg) center center no-repeat;background-size:cover}.business-header-404{height:400px;background:url(http://2podrostka.ru/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg) center center no-repeat;background-size:cover}.tagline{color:#fff;text-shadow:0 0 10px #000}footer{margin:50px 0}a.rollover-guy{background:url(http://2podrostka.ru/img/seksualnoe-obrazovanie-dlya-podrostkov-parnei-600.jpg);display:block;width:300px;height:300px;border-radius:50%}a.rollover-guy:hover{background-position:0 -300px;border-radius:50%}a.rollover-para{background:url(http://2podrostka.ru/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-i-parnei-600.jpg);display:block;width:300px;height:300px;border-radius:50%}a.rollover-para:hover{background-position:0 -300px;border-radius:50%}a.rollover-girl{background:url(http://2podrostka.ru/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-600.jpg);display:block;width:300px;height:300px;border-radius:50%}a.rollover-girl:hover{background-position:0 -300px;border-radius:50%}.fixedtext{position:fixed}.leftimg{float:left;margin:7px 7px 7px 0}#bg_image{width:100%;position:absolute}.bg_slider{width:100%;position:fixed}#placeholder{height:2000px}}
+body {
+  margin-top: 50px;
+  font-size: 17px;
+}
+.white,
+.white a {
+  color: #999;
+}
+.business-header {
+  height: 400px;
+  background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg)
+    center center no-repeat;
+  background-size: cover;
+}
+.business-header-girl {
+  height: 400px;
+  background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-5-400.jpg)
+    center center no-repeat;
+  background-size: cover;
+}
+.business-header-para {
+  height: 400px;
+  background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-3-400.jpg)
+    center center no-repeat;
+  background-size: cover;
+}
+.business-header-guy {
+  height: 400px;
+  background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-10-400.jpg)
+    center center no-repeat;
+  background-size: cover;
+}
+.business-header-404 {
+  height: 400px;
+  background: url(/img/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-7-400.jpg)
+    center center no-repeat;
+  background-size: cover;
+}
+.tagline {
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+footer {
+  margin: 50px 0;
+}
+a.rollover-guy {
+  background: url(/img/seksualnoe-obrazovanie-dlya-podrostkov-parnei-600.jpg);
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+a.rollover-guy:hover {
+  background-position: 0 -300px;
+  border-radius: 50%;
+}
+a.rollover-para {
+  background: url(/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-i-parnei-600.jpg);
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+a.rollover-para:hover {
+  background-position: 0 -300px;
+  border-radius: 50%;
+}
+a.rollover-girl {
+  background: url(/img/seksualnoe-obrazovanie-dlya-podrostkov-devushek-600.jpg);
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+a.rollover-girl:hover {
+  background-position: 0 -300px;
+  border-radius: 50%;
+}
+.fixedtext {
+  position: fixed;
+}
+.leftimg {
+  float: left;
+  margin: 7px 7px 7px 0;
+}
+#bg_image {
+  width: 100%;
+  position: absolute;
+}
+.bg_slider {
+  width: 100%;
+  position: fixed;
+}
+#placeholder {
+  height: 2000px;
+}
