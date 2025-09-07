@@ -44,7 +44,7 @@
  <link href="css/custom.css" rel="stylesheet">
 <script type="application/ld+json">
 {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     {

@@ -40,7 +40,7 @@
     <link href="css/custom.css" rel="stylesheet">
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
@@ -96,6 +96,12 @@
         }
       }
     </script>
+    <?php include('./parts/schema-faq.php'); ?>
+    <?php include('./parts/schema-howto.php'); ?>
+    <?php include('./parts/schema-medical.php'); ?>
+    <?php include('./parts/schema-girl-webpage.php'); ?>
+    <?php include('./parts/schema-organization.php'); ?>
+    <?php include('./parts/schema-website.php'); ?>
   </head>
   <body>
     <?php include('./parts/analytics.php'); ?>
@@ -133,6 +139,7 @@
             </div>
             <br />
             <img width="80%" height="auto" sizes="(min-width: 40em) 80vw, 100vw" src="ai-cache/768/devushka-podrostok/devushka-podrostok-seksualnoe-obrazovanie-dlya-podrostkov-626.jpg" alt="Сексуальное образование для девушки-подростка. Секретные материалы для Неё">
+            <?php include('./parts/schema-girl-image.php'); ?>
             <p></p>
             <br />
             <p>О сексе сейчас говорят так много, что ты наверняка думаешь, что знаешь про это уже всё.</p>
@@ -257,6 +264,7 @@
             <div class="video" align="center">
               <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RXQG_9zQf70?si=Nfw_D7bCSOHwu90i" title="Французская реклама презервативов" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <?php include('./parts/schema-girl-video.php'); ?>
             <p>Французская социальная реклама презервативов из 90-х. Её тоже показывали по телевизору без перевода на русский.</p>
             <p>Cмысл ролика выше в том, чтобы женщины не стеснялись презервативов. Некоторые девушки стесняются их покупать или даже не хотят брать презерватив в руки. Ролик идёт 3 минуты.
             </p>
@@ -291,6 +299,7 @@
             <p>8-800-200-00-20</p>
             <p>(Работает ежедневно с 15.00 до 23.00 по московскому времени.</p>
             <p>Звонок из любого города России будет абсолютно бесплатным.)</p>
+            <?php include('./parts/schema-contact.php'); ?>
             <br />
             <p>Информация подготовлена при поддержке Министерства здравоохранения РФ и Фонда «Центр социального развития и информации (PSI). Набор и вёрстка: Дмитрий Седов</p>
             <br />

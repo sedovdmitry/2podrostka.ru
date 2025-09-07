@@ -46,7 +46,7 @@
     <link href="css/custom.css" rel="stylesheet">
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
@@ -60,6 +60,10 @@
       ]
     }
     </script>
+    <?php include('./parts/schema-organization.php'); ?>
+    <?php include('./parts/schema-website.php'); ?>
+    <?php include('./parts/schema-course.php'); ?>
+    <?php include('./parts/schema-webpage-main.php'); ?>
   </head>
   <body>
     <?php include('./parts/analytics.php'); ?>
