@@ -10,7 +10,6 @@ error_log
 htaccess
 
 # Кэш и временные файлы
-ai-cache/
 cache/
 tmp/
 temp/

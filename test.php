@@ -334,7 +334,7 @@ s.parentNode.insertBefore(hcc, s.nextSibling);
  <footer>
 
  <center><p>Все права защищены <b><a href="http://2podrostka.ru">2podrostka.ru</a></b></a> – <a href="http://2podrostka.ru"><b>Половое воспитание</b></a>
-	<center><p>&copy; Архивный проект 2013 года для муниципального центра по половому воспитанию подростков, 2013-2014</p></center>
+	<center><p>&copy; Проект для муниципального центра по половому воспитанию подростков, 2013-2014</p></center>
 	<center><p>При копировании материалов ссылка на сайт обязательна.</p></center>
 	<p></p><br />
 
