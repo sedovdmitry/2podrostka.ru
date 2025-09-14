@@ -26,6 +26,7 @@ Thumbs.db
 *.key
 *.pem
 *.crt
+*.env
 
 # Файлы с потенциальными секретами
 *secret*
@@ -126,3 +127,6 @@ seo-checker.pdf
 !*.gif
 !*.webp
 !*.ico
+
+*.md
+!README.md
