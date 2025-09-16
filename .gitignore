@@ -53,6 +53,9 @@ db_config.php
 personal/
 private/
 admin/
+2parser/
+2podrostka-parser/
+public/images/
 
 # Файлы с ключами сервисов
 google*.php
