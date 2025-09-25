@@ -41,8 +41,8 @@
       }
     </style>
     <title>Последние новости о половом воспитании, секс-просвете в России</title>
-    <link href="css/bootstrap-3.1.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="/css/bootstrap-3.1.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
     <script type="application/ld+json">
     <script type="application/ld+json">
     {

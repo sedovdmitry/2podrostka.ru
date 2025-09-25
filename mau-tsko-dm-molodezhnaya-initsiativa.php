@@ -42,9 +42,9 @@
     </style>
     <title>Контакты центра «Молодежная инициатива» г. Балаково</title>
     <!-- yui compressor: Bootstrap core CSS + Custom CSS for the 'Business Frontpage' Template -->
-    <link href="css/bootstrap-3.1.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
+    <link href="/css/bootstrap-3.1.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/about.css" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
