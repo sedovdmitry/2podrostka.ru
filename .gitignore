@@ -1,106 +1,147 @@
+# =============================================
+# СЕКРЕТНЫЕ ФАЙЛЫ И КОНФИГУРАЦИИ
+# =============================================
+
+# Весь config/ по умолчанию игнорируется
+/config/
+
+# Но разрешаем конкретные файлы
+!/config/database.php
+!/config/constants.example.php
+
+# =============================================
+# ЛОГИ И ВРЕМЕННЫЕ ФАЙЛЫ
+# =============================================
+
 # Логи ошибок
 error_log
 *.log
-
-# Файлы конфигурации сервера
-.htaccess
-.htaccess-current
-.htaccess-old
-.htaccess2
-htaccess
+logs/
 
 # Кэш и временные файлы
 cache/
 tmp/
 temp/
-
-# Системные файлы
-Thumbs.db
-.DS_Store
-*.swp
-*.swo
-*~
-
-# Файлы с ключами API и токенами
-2testing/
-*.key
-*.pem
-*.crt
-*.env
-
-# Файлы с потенциальными секретами
-*secret*
-*password*
-*token*
-*api*
-
-# Временные файлы PHP
 *.tmp
 *.temp
 
-# Файлы резервных копий
-*.bak
-*.backup
-*.old
+# Сессии
+sessions/
 
-# Файлы с конфигурацией базы данных
-config.php
-database.php
-db_config.php
-*.ini
+# =============================================
+# СИСТЕМНЫЕ ФАЙЛЫ
+# =============================================
 
-# Файлы с личными данными
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+*.sublime-*
+.idea/
+.vscode/
+*.komodoproject
+
+# =============================================
+# ФАЙЛЫ С СЕКРЕТАМИ
+# =============================================
+
+# Файлы окружения
+.env
+.env.local
+.env.production
+.env.example
+
+# Ключи и сертификаты
+*.key
+*.pem
+*.crt
+*.csr
+
+# API ключи и токены
+*api*
+*token*
+*secret*
+*password*
+*credential*
+
+# =============================================
+# ПАПКИ С ЛИЧНЫМИ ДАННЫМИ
+# =============================================
+
+2testing/
+2parser/
+2podrostka-parser/
 personal/
 private/
 admin/
-2parser/
-2podrostka-parser/
-public/images/
 
-# Файлы с ключами сервисов
-google*.php
-yandex*.php
-wmail*.php
-be529b51bf55.html
+# =============================================
+# БЭКАПЫ И АРХИВЫ
+# =============================================
 
-# Файлы с потенциальными ключами
-novosti.txt
-urllist.txt
-top100check.txt
+*.bak
+*.backup
+*.old
+*.zip
+*.tar
+*.gz
+*.7z
 
-# Файлы с конфигурацией
-php-htaccess.txt
-gzdoc.php
-zip.php
-resize.php
-simple.php
-adaptive-images.php
+# =============================================
+# ВЕБ-СЕРВЕР И HTACCESS
+# =============================================
 
-# Файлы с потенциальными ключами API
-SitemapGenerator.php
-phpSitemapNG/
-php-sitemap-generator/
+.htaccess
+.htaccess*
+htaccess
 
-# Файлы с потенциальными ключами
-settings/
+# =============================================
+# SEO И СЛУЖЕБНЫЕ ФАЙЛЫ (игнорируем)
+# =============================================
 
-# Файлы с потенциальными ключами
 SEO Tools, Software and Articles _ SEO Site Checkup_files/
 SEO Tools, Software and Articles _ SEO Site Checkup.html
 seo-checker.pdf
 
-# Файлы с потенциальными ключами
-*.txt
-*.pdf
-*.xml
+# Файлы сайтмапов (кроме основных)
+phpSitemapNG/
+php-sitemap-generator/
+SitemapGenerator.php
 
-# Исключения для основных файлов сайта
+# =============================================
+# ИСКЛЮЧЕНИЯ - ОСНОВНЫЕ ФАЙЛЫ САЙТА
+# =============================================
+
+# Основные PHP файлы
+!*.php
+!/*.php
+
+# Основные директории
+!css/
+!js/
+!img/
+!widgets/
+api/
+
+# Файлы в корне
 !index.php
 !404.php
 !robots.txt
 !sitemap.xml
 !ads.txt
 !BingSiteAuth.xml
+
+# Верификационные файлы
 !yandex_29ee4ae64b375bcd.php
 !yandex_29ee4ae64b375bcd.html
 !google48719379f71658b9.php
@@ -109,27 +150,56 @@ seo-checker.pdf
 !wmail_d0d62f10fbf4d147.php
 !be529b51bf55.html
 
-# Основные PHP файлы сайта
-!*.php
-
-# Основные CSS файлы
-!css/*.css
+# Основные стили и скрипты
 !*.css
-
-# Основные JS файлы
-!js/*.js
 !*.js
+!css/*.css
+!js/*.js
 
-# Основные изображения
-!img/**/*.jpg
-!img/**/*.png
-!img/**/*.gif
-!img/**/*.webp
+# Изображения
 !*.jpg
 !*.png
 !*.gif
 !*.webp
 !*.ico
+!*.svg
+!img/**/*.jpg
+!img/**/*.png
+!img/**/*.gif
+!img/**/*.webp
+!img/**/*.svg
 
+# Документация
 *.md
 !README.md
+
+# =============================================
+# СПЕЦИФИЧЕСКИЕ ИСКЛЮЧЕНИЯ ДЛЯ CONFIG
+# =============================================
+
+# Разрешаем доступ к config/database.php и config/constants.example.php
+!/config/
+/config/*
+!/config/database.php
+!/config/constants.example.php
+
+# =============================================
+# ФАЙЛЫ ДЛЯ РАЗРАБОТЧИКОВ (игнорируем)
+# =============================================
+
+# Файлы с настройками
+novosti.txt
+urllist.txt
+top100check.txt
+php-htaccess.txt
+2podrostka.txt
+/ai-cache/порядок*
+link*.txt
+
+# Служебные скрипты
+gzdoc.php
+zip.php
+resize.php
+simple.php
+adaptive-images.php
+settings/

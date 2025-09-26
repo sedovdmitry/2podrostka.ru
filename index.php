@@ -85,6 +85,18 @@
         <span class="inner"></span>
       </span>
     </div>
+
+    <!-- Блок новостей -->
+    <div class="container" style="margin-top: 30px">
+      <div class="row">
+        <div class="col-lg-12">
+          <div style="background-image: url(img/kontrol/methods_bg.png); padding: 1px 15px; repeat;" class="clear_fix">
+            <?php include('./widgets/news/index.php'); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <br>
       <div class="row">
