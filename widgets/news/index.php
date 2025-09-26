@@ -51,13 +51,13 @@ function renderDesktopNews($news) {
         $html .= '
         <div class="news-item">
             ' . ($item['image_url'] ? '
-            <img src="' . htmlspecialchars($item['image_url']) . '" 
+            <img src="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '" 
                  alt="' . htmlspecialchars($item['title']) . '" 
                  class="news-image" loading="lazy">' : '') . '
             <div class="news-content">
                 <div class="news-publisher">
                     ' . ($item['publisher_icon_url'] ? '
-                    <img src="' . htmlspecialchars($item['publisher_icon_url']) . '" 
+                    <img src="' . htmlspecialchars(IMG_PATH . $item['publisher_icon_url']) . '" 
                          alt="' . htmlspecialchars($item['publisher_name']) . '" 
                          class="publisher-icon">' : '') . '
                     <span class="publisher-name">' . htmlspecialchars($item['publisher_name'] ?? 'Источник') . '</span>
@@ -122,7 +122,7 @@ foreach (array_keys($categories) as $category) {
 ?>
 <div class="news-widget">
     <div class="news-tabs">
-        <h3 class="widget-title">Последние новости о половом воспитании</h3>
+        <h2 class="widget-title">Последние новости о половом воспитании</h2>
         
         <ul class="nav nav-tabs" role="tablist">
             <?php $first = true; ?>
