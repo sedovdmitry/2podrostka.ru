@@ -87,10 +87,7 @@ function renderMobileNews($news) {
             ' . ($item['image_url'] ? '
             <img src="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '" 
                  alt="' . htmlspecialchars($item['title']) . '" 
-                 class="news-image-mobile" loading="lazy">' : 
-                 ($item['description'] ? '
-                <p class="news-description-mobile">' . 
-                    htmlspecialchars(mb_substr($item['description'], 0, 150)) . '...</p>' : '')) . '
+                 class="news-image-mobile" loading="lazy">' : '') . '
             <div class="news-publisher">
                 ' . ($item['publisher_icon_url'] ? '
                 <img src="' . htmlspecialchars(IMG_PATH . $item['publisher_icon_url']) . '" 
@@ -101,7 +98,7 @@ function renderMobileNews($news) {
             <h5 class="news-title-mobile">
                 <a href="' . htmlspecialchars($item['original_url']) . '" 
                    target="_blank" rel="noopener">
-                    ' . htmlspecialchars(mb_substr($item['title'], 0, 60)) . '...
+                    ' . htmlspecialchars($item['title']) . '
                 </a>
             </h5>
             <div class="news-time-mobile">' . htmlspecialchars($item['time_ago']) . '</div>
