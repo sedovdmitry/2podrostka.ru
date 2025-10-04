@@ -90,7 +90,7 @@ function renderMobileNews($news) {
                  class="news-image-mobile" loading="lazy">' : 
                  ($item['description'] ? '
                 <p class="news-description-mobile">' . 
-                    htmlspecialchars(mb_substr($item['description'], 0, 200)) . '...</p>' : '')) . '
+                    htmlspecialchars(mb_substr($item['description'], 0, 150)) . '...</p>' : '')) . '
             <div class="news-publisher">
                 ' . ($item['publisher_icon_url'] ? '
                 <img src="' . htmlspecialchars(IMG_PATH . $item['publisher_icon_url']) . '" 
