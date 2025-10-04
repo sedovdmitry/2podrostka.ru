@@ -110,9 +110,9 @@ function renderMobileNews($news) {
 
 // Используем реальные категории из БД
 $categories = [
-    'ru' => 'В России',
+    'ru' => 'В России и СНГ',
     'int' => 'В мире', 
-    'editorial' => 'Наша редакция'
+    'editorial' => 'Избранные'
 ];
 
 $news_data = [];
