@@ -141,7 +141,7 @@ foreach (array_keys($categories) as $category) {
             <?php foreach ($categories as $key => $title): ?>
                 <div role="tabpanel" class="tab-pane <?= $first ? 'active' : '' ?>" id="<?= $key ?>">
                     <?php if ($key === 'editorial'): ?>
-                        <p class="no-news-message">Раздел в разработке. Здесь будут публиковаться материалы нашей редакции.</p>
+                        <p class="no-news-message">Раздел в разработке. Здесь будут публиковаться избранные материалы центра.</p>
                     <?php else: ?>
                         <!-- Десктоп версия -->
                         <div class="news-desktop">
