@@ -90,7 +90,9 @@
     <div class="container" style="margin-top: 30px">
       <div class="row">
         <div class="col-lg-12">
-            <?php include('./widgets/news/index.php'); ?>
+            <?php
+              include($_SERVER['DOCUMENT_ROOT'] . '/widgets/news/index.php');
+            ?>
         </div>
       </div>
     </div>
