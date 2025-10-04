@@ -87,7 +87,10 @@ function renderMobileNews($news) {
             ' . ($item['image_url'] ? '
             <img src="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '" 
                  alt="' . htmlspecialchars($item['title']) . '" 
-                 class="news-image-mobile" loading="lazy">' : '') . '
+                 class="news-image-mobile" loading="lazy">' : 
+                 ($item['description'] ? '
+                <p class="news-description-mobile">' . 
+                    htmlspecialchars(mb_substr($item['description'], 0, 200)) . '...</p>' : '')) . '
             <div class="news-publisher">
                 ' . ($item['publisher_icon_url'] ? '
                 <img src="' . htmlspecialchars(IMG_PATH . $item['publisher_icon_url']) . '" 
