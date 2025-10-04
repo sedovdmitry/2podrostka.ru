@@ -85,12 +85,12 @@ function renderMobileNews($news) {
         $html .= '
         <div class="news-card-mobile">
             ' . ($item['image_url'] ? '
-            <img src="' . htmlspecialchars($item['image_url']) . '" 
+            <img src="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '" 
                  alt="' . htmlspecialchars($item['title']) . '" 
                  class="news-image-mobile" loading="lazy">' : '') . '
             <div class="news-publisher">
                 ' . ($item['publisher_icon_url'] ? '
-                <img src="' . htmlspecialchars($item['publisher_icon_url']) . '" 
+                <img src="' . htmlspecialchars(IMG_PATH . $item['publisher_icon_url']) . '" 
                      alt="' . htmlspecialchars($item['publisher_name']) . '" 
                      class="publisher-icon">' : '') . '
                 <span class="publisher-name-mobile">' . htmlspecialchars($item['publisher_name'] ?? 'Источник') . '</span>
