@@ -121,7 +121,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html" class="rollover-deti"></a>
+                  <a href="polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html" class="rollover-deti" aria-label="Половое воспитание в семье"></a>
                 </center>
                 <h3>
                   <a href="polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html">Половое воспитание в семье</a>
@@ -134,7 +134,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.html" class="rollover-karta"></a>
+                  <a href="infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.html" class="rollover-karta" aria-label="Инфографика исследований о подростках"></a>
                 </center>
                 <h3>
                   <a href="infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.html">Инфографика последних научных исследований о подростках</a>
@@ -151,7 +151,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.html" class="rollover-guy"></a>
+                  <a href="mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.html" class="rollover-guy" aria-label="Психология парней подростков"></a>
                 </center>
                 <h3>
                   <a href="mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.html">Как начать встречаться с девушкой</a>
@@ -164,7 +164,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.html" class="rollover-para"></a>
+                  <a href="pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.html" class="rollover-para" aria-label="Защита от венерических заболеваний"></a>
                 </center>
                 <h3>
                   <a href="pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.html">А вы тоже боитесь венерических заболеваний?</a>
@@ -181,7 +181,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.html" class="rollover-girl"></a>
+                  <a href="polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.html" class="rollover-girl" aria-label="Половое воспитание девушек"></a>
                 </center>
                 <h3>
                   <a href="polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.html">Как стать богиней любви без последствий</a>
@@ -195,7 +195,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="kontrol-rozhdaemosti-metody-kontracepcii.html" class="rollover-panel"></a>
+                  <a href="kontrol-rozhdaemosti-metody-kontracepcii.html" class="rollover-panel" aria-label="Методы контрацепции"></a>
                 </center>
                 <h3>
                   <a href="kontrol-rozhdaemosti-metody-kontracepcii.html">Методы контрацепции для школьников-подростков</a>
@@ -355,7 +355,7 @@
                 <tr>
                   <td style="padding: 5px 10px 5px 10px;">&nbsp;</td>
                   <td align="right" style="padding: 5px 10px 5px 10px;">
-                    <input type="submit" value="" style="background: url(https://image.subscribe.ru/subut/button-blue.gif) no-repeat;border:none;width:93px;height:21px;font-size:12px;font-family:Trebuchet MS, Verdana, Arial; width:100px;">
+                    <input type="submit" value="Отправить" style="background: url(https://image.subscribe.ru/subut/button-blue.gif) no-repeat;border:none;width:93px;height:21px;font-size:12px;font-family:Trebuchet MS, Verdana, Arial; width:100px;">
                   </td>
                 </tr>
                 <tr>
