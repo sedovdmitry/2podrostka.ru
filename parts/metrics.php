@@ -7,11 +7,15 @@
     -->
   </script>
   <!--/LiveInternet-->
-  <!-- Yandex.Metrika informer -->
-  <a href="https://metrika.yandex.ru/stat/?id=23378290&amp;from=informer" target="_blank" rel="nofollow">
-    <img src="https://informer.yandex.ru/informer/23378290/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="23378290" data-lang="ru" />
-  </a>
-  <!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=23378290&amp;from=informer" target="_blank" rel="nofollow">
+    <img src="https://informer.yandex.ru/informer/23378290/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+         style="width:88px; height:31px; border:0;"
+         alt="Яндекс.Метрика"
+         title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+        class="ym-advanced-informer" data-cid="23378290" data-lang="ru"/>
+</a>
+<!-- /Yandex.Metrika informer -->
   <!-- Rating@Mail.ru logo -->
   <a target="_blank" href="https://top.mail.ru/jump?from=2542832">
     <img src="//top-fwz1.mail.ru/counter?id=2542832;t=410;l=1" style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" />

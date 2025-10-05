@@ -41,9 +41,8 @@
       }
     </style>
     <title>Половое воспитание детей/подростков, сексуальное образование</title>
-    <!-- yui compressor: Bootstrap core CSS + Custom CSS for the 'Business Frontpage' Template -->
-    <link href="/css/bootstrap-3.1.min.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap-3.1.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/css/custom.css" media="print" onload="this.media='all'">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -74,7 +73,7 @@
     </div>
     <?php include('./parts/nav.php'); ?>
     <div class="hero">
-      <span id="cafe" role="img" aria-label="половое воспитание девушки-подростка">
+      <div id="cafe" role="img" aria-label="половое воспитание девушки-подростка">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -83,7 +82,7 @@
           </div>
         </div>
         <span class="inner"></span>
-      </span>
+      </div>
     </div>
 
     <!-- Блок новостей -->
@@ -393,6 +392,6 @@
     <br />
     <br />
     <?php include('./parts/footer-scripts.php'); ?>
-    <?php include('./parts/vk-group.php'); ?>
+    <?php include('./parts/vk-group_v2.php'); ?>
   </body>
 </html>

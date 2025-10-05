@@ -122,7 +122,7 @@ foreach (array_keys($categories) as $category) {
 ?>
 <div class="news-widget">
     <div class="news-tabs">
-        <h2 class="widget-title">Последние новости о половом воспитании</h2>
+        <h2 class="widget-title">Свежие новости о половом воспитании в России и мире</h2>
         
         <ul class="nav nav-tabs" role="tablist">
             <?php $first = true; ?>

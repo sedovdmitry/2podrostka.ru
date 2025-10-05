@@ -323,6 +323,6 @@
     <br>
     <br>
     <?php include('./parts/footer-scripts.php'); ?>
-    <?php include('./parts/vk-posts.php'); ?>
+    <?php include('./parts/vk-posts_v2.php'); ?>
   </body>
 </html>

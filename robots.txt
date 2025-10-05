@@ -3,11 +3,7 @@ Allow: /
 Disallow: /*.php$
 Disallow: /*.txt$
 Disallow: /*.zip$
-Disallow: /go.php
-Disallow: /css/
 Disallow: /fonts/
-Disallow: /js/
-Disallow: /link.php
 Disallow: /resize.php
 Disallow: /test.php
 Disallow: /zip.php
@@ -29,18 +25,14 @@ Disallow: /settings/
 Disallow: /php-sitemap-generator/
 Disallow: /gzip-js/
 Disallow: /css-min/
-Crawl-delay: 2
+Crawl-delay: 1
 
 User-agent: Yandex
 Allow: /
 Disallow: /*.php$
 Disallow: /*.txt$
 Disallow: /*.zip$
-Disallow: /go.php
-Disallow: /css/
 Disallow: /fonts/
-Disallow: /js/
-Disallow: /link.php
 Disallow: /resize.php
 Disallow: /test.php
 Disallow: /zip.php
@@ -63,6 +55,6 @@ Disallow: /php-sitemap-generator/
 Disallow: /gzip-js/
 Disallow: /fonts/
 Disallow: /css-min/
-Crawl-delay: 2
+Crawl-delay: 1
 Host: 2podrostka.ru
 Sitemap: https://2podrostka.ru/sitemap.xml

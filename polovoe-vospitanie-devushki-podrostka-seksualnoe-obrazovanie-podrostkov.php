@@ -497,9 +497,9 @@
       // Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
       document.createElement("picture");
     </script>
-    <script async="true" src="js/picturefill.min.js"></script>
+    <script async="true" src="/js/picturefill.min.js"></script>
 
-    <?php include('./parts/vk-posts.php'); ?>
+    <?php include('./parts/vk-posts_v2.php'); ?>
     <?php include('./parts/footer-scripts.php'); ?>
   </body>
 </html>
