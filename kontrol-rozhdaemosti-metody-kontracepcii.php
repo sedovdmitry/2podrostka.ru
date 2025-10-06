@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="canonical" href="https://2podrostka.ru/<?php echo basename($_SERVER['PHP_SELF'], '.php'); ?>.html">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Методы контрацепции для школьников-подростков: методы контрацепции">
