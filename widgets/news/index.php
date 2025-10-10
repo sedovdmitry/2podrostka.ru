@@ -34,10 +34,11 @@ function getNews($category = 'ru') {
     
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $curlError = curl_error($ch);  # Новый: Захват ошибки curl
     curl_close($ch);
     
     if (DEBUG_MODE) {
-        error_log("API Request to: $url, HTTP Code: $httpCode");
+        error_log("API Request to: $url, HTTP Code: $httpCode, Error: $curlError");  # Новый: Логирование ошибки
     }
     
     if ($response && $httpCode === 200) {
@@ -45,6 +46,8 @@ function getNews($category = 'ru') {
         return $data['status'] === 'success' ? array_slice($data['data'], 0, 10) : []; // Ограничиваем 10
     }
     
+    # Новый: Возврат пустого массива с логом
+    error_log("API failed: HTTP $httpCode, Error: $curlError");
     return [];
 }
 
