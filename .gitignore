@@ -24,6 +24,7 @@ tmp/
 temp/
 *.tmp
 *.temp
+*.br
 
 # Сессии
 sessions/
