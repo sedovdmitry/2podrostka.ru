@@ -1,6 +1,12 @@
 <?php
 require_once './config/constants.php';
 
+// Проверка IMG_PATH
+if (!defined('IMG_PATH') || !is_string(IMG_PATH)) {
+    error_log('IMG_PATH is not defined or not a string: ' . var_export(IMG_PATH, true));
+    define('IMG_PATH', 'https://2podrostka.ru/2parser/public/images/');
+}
+
 // Inline critical CSS
 echo '<style>
     .news-widget { max-width: 1200px; margin: 0 auto; }
@@ -14,41 +20,73 @@ echo '<style>
     .news-image, .news-image-mobile { width: 100%; max-width: 300px; height: auto; }
     .publisher-icon { width: 20px; height: 20px; vertical-align: middle; }
     .news-title, .news-title-mobile { font-size: 18px; margin: 10px 0; }
-    .news-time, .news-time-mobile { color: #333; font-size: 14px; } /* Улучшен контраст */
+    .news-time, .news-time-mobile { color: #333; font-size: 14px; }
     .news-horizontal-scroll { display: flex; overflow-x: auto; }
     @media (max-width: 600px) { .news-desktop { display: none; } .news-mobile { display: block; } }
     @media (min-width: 601px) { .news-mobile { display: none; } .news-desktop { display: block; } }
 </style>';
 
 function getNews($category = 'ru') {
-    $url = NEWS_API_URL . "?category=" . urlencode($category) . "&limit=10"; // Ограничиваем 10 записями
+    $url = NEWS_API_URL . "?category=" . urlencode($category) . "&limit=10";
     
     $ch = curl_init();
     curl_setopt_array($ch, [
         CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_TIMEOUT => 5, // Уменьшен таймаут
+        CURLOPT_TIMEOUT => 5,
         CURLOPT_FAILONERROR => true,
         CURLOPT_FOLLOWLOCATION => true
     ]);
     
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $curlError = curl_error($ch);  # Новый: Захват ошибки curl
+    $curlError = curl_error($ch);
     curl_close($ch);
     
     if (DEBUG_MODE) {
-        error_log("API Request to: $url, HTTP Code: $httpCode, Error: $curlError");  # Новый: Логирование ошибки
+        error_log("API Request to: $url, HTTP Code: $httpCode, Error: $curlError");
     }
     
     if ($response && $httpCode === 200) {
         $data = json_decode($response, true);
-        return $data['status'] === 'success' ? array_slice($data['data'], 0, 10) : []; // Ограничиваем 10
+        return $data['status'] === 'success' ? array_slice($data['data'], 0, 10) : [];
     }
     
-    # Новый: Возврат пустого массива с логом
     error_log("API failed: HTTP $httpCode, Error: $curlError");
     return [];
+}
+
+function getImageUrl($baseUrl, $isSmall = false) {
+    if (!is_string($baseUrl) || empty($baseUrl)) {
+        return '/img/default-fallback-image';
+    }
+    
+    $cleanUrl = $baseUrl;
+    
+    $cleanUrl = preg_replace('/\.webp$/', '', $cleanUrl);
+    if ($cleanUrl === null) {
+        $cleanUrl = $baseUrl;
+    }
+    
+    if ($isSmall) {
+        $match = [];
+        if (preg_match('/\.(png|jpg|jpeg|webp)$/i', $cleanUrl, $match)) {
+            $ext = strtolower($match[1]);
+            $cleanUrl = preg_replace('/\.' . preg_quote($match[0], '/') . '$/i', '-small.' . $ext, $cleanUrl);
+        } else {
+            $cleanUrl .= '-small.webp';
+        }
+        if ($cleanUrl === null) {
+            $cleanUrl = $baseUrl . '-small.webp';
+        }
+    }
+    
+    $match = [];
+    if (!preg_match('/\.(png|jpg|jpeg|webp)$/i', $cleanUrl)) {
+        $cleanUrl .= '.webp';
+    }
+    
+    return htmlspecialchars($cleanUrl);
 }
 
 function renderNewsItems($news, $isMobile = false) {
@@ -175,7 +213,6 @@ foreach (array_keys($categories) as $category) {
 </div>
 
 <script defer>
-// Активация табов без document.write
 document.addEventListener('DOMContentLoaded', function() {
     const tabLinks = document.querySelectorAll('.news-tabs a[data-toggle="tab"]');
     
