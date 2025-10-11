@@ -225,7 +225,6 @@
 @media (max-width: 768px) {
   .news-widget {
     padding: 15px;
-    border-radius: 10px;
     margin-bottom: 4px;
   }
 
@@ -236,7 +235,7 @@
 
   .news-tabs .nav-tabs {
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .news-tabs .nav-tabs > li {
