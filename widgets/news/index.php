@@ -195,6 +195,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<link rel="stylesheet" href="/widgets/news/styles.css" media="all">
+<link rel="stylesheet" href="/widgets/news/styles.css?v=1" media="all">
 <link rel="preconnect" href="https://yastatic.net">
 <link rel="preconnect" href="https://mc.yandex.ru">
