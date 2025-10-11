@@ -1,9 +1,10 @@
 .news-widget {
+  max-width: 1200px;
+  margin: 0 auto;
   background-image: url(/img/kontrol/methods_bg.png);
   padding: 20px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;*/
 }
 
 .widget-title {
@@ -16,7 +17,7 @@
 }
 
 .news-tabs .nav-tabs {
-  border-bottom: 2px solid #e9ecef;
+  border-bottom: 2px solid #e9ecef !important;
   margin-bottom: 25px;
   display: flex;
   justify-content: center;
@@ -28,8 +29,8 @@
 }
 
 .news-tabs .nav-tabs > li > a {
-  border: none;
-  color: #6c757d;
+  border: none !important;
+  color: #6c757d !important;
   font-weight: 600;
   padding: 12px 24px;
   margin-right: 5px;
@@ -45,15 +46,15 @@
 .news-tabs .nav-tabs > li.active > a,
 .news-tabs .nav-tabs > li.active > a:hover,
 .news-tabs .nav-tabs > li.active > a:focus {
-  border: none;
-  border-bottom: 3px solid #007bff;
-  color: #007bff;
-  background: transparent;
+  border: none !important;
+  border-bottom: 3px solid #007bff !important;
+  color: #007bff !important;
+  background: transparent !important;
 }
 
 /* Десктопная версия */
 .news-desktop {
-  display: block;
+  display: block !important;
 }
 
 .news-item {
@@ -83,7 +84,7 @@
 
 .news-content {
   flex: 1;
-  min-width: 0; /* Для правильного обрезания текста */
+  min-width: 0;
 }
 
 .news-publisher {
@@ -139,7 +140,7 @@
 
 /* Мобильная версия */
 .news-mobile {
-  display: none;
+  display: none !important;
 }
 
 .news-horizontal-scroll {
@@ -248,11 +249,11 @@
   }
 
   .news-desktop {
-    display: none;
+    display: none !important;
   }
 
   .news-mobile {
-    display: block;
+    display: block !important;
   }
 
   .news-card-mobile {

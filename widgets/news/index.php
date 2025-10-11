@@ -10,20 +10,7 @@ if (!defined('IMG_PATH') || !is_string(IMG_PATH)) {
 // Inline critical CSS
 echo '<style>
     .news-widget { max-width: 1200px; margin: 0 auto; }
-    .news-tabs { padding: 20px; }
-    .widget-title { font-size: 24px; margin-bottom: 20px; }
-    .nav-tabs { display: flex; list-style: none; padding: 0; }
-    .nav-tabs li { margin-right: 10px; }
-    .nav-tabs a { text-decoration: none; color: #333; padding: 10px; }
-    .nav-tabs .active a { font-weight: bold; border-bottom: 2px solid #007bff; }
-    .news-item, .news-card-mobile { display: flex; flex-direction: column; margin-bottom: 20px; }
-    .news-image, .news-image-mobile { width: 100%; max-width: 300px; height: auto; }
-    .publisher-icon { width: 20px; height: 20px; vertical-align: middle; }
-    .news-title, .news-title-mobile { font-size: 18px; margin: 10px 0; }
-    .news-time, .news-time-mobile { color: #333; font-size: 14px; }
-    .news-horizontal-scroll { display: flex; overflow-x: auto; }
-    @media (max-width: 600px) { .news-desktop { display: none; } .news-mobile { display: block; } }
-    @media (min-width: 601px) { .news-mobile { display: none; } .news-desktop { display: block; } }
+    .news-loading { opacity: 0.6; pointer-events: none; }
 </style>';
 
 function getNews($category = 'ru') {
@@ -233,6 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<link rel="stylesheet" href="/widgets/news/styles.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/widgets/news/styles.css" media="all">
+<noscript><link rel="stylesheet" href="/widgets/news/styles.css"></noscript>
 <link rel="preconnect" href="https://yastatic.net">
 <link rel="preconnect" href="https://mc.yandex.ru">
