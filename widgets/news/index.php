@@ -1,16 +1,19 @@
 <?php
 require_once './config/constants.php';
 
-// Проверка IMG_PATH
-if (!defined('IMG_PATH') || !is_string(IMG_PATH)) {
-    error_log('IMG_PATH is not defined or not a string: ' . var_export(IMG_PATH, true));
-    define('IMG_PATH', 'https://2podrostka.ru/2parser/public/images/');
-}
-
 // Inline critical CSS
 echo '<style>
     .news-widget { max-width: 1200px; margin: 0 auto; }
     .news-loading { opacity: 0.6; pointer-events: none; }
+    .news-image-loading, .news-image-mobile-loading {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: skeleton-loading 1.5s infinite;
+    }
+    @keyframes skeleton-loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    }
 </style>';
 
 function getNews($category = 'ru') {
@@ -30,50 +33,22 @@ function getNews($category = 'ru') {
     $curlError = curl_error($ch);
     curl_close($ch);
     
-    if (DEBUG_MODE) {
-        error_log("API Request to: $url, HTTP Code: $httpCode, Error: $curlError");
-    }
-    
     if ($response && $httpCode === 200) {
         $data = json_decode($response, true);
         return $data['status'] === 'success' ? array_slice($data['data'], 0, 10) : [];
     }
     
-    error_log("API failed: HTTP $httpCode, Error: $curlError");
+    if (DEBUG_MODE) {
+        error_log("API failed: HTTP $httpCode, Error: $curlError");
+    }
     return [];
 }
 
-function getImageUrl($baseUrl, $isSmall = false) {
+function getImageUrl($baseUrl) {
     if (!is_string($baseUrl) || empty($baseUrl)) {
-        return '/img/default-fallback-image';
+        return '';
     }
-    
-    $cleanUrl = $baseUrl;
-    
-    $cleanUrl = preg_replace('/\.webp$/', '', $cleanUrl);
-    if ($cleanUrl === null) {
-        $cleanUrl = $baseUrl;
-    }
-    
-    if ($isSmall) {
-        $match = [];
-        if (preg_match('/\.(png|jpg|jpeg|webp)$/i', $cleanUrl, $match)) {
-            $ext = strtolower($match[1]);
-            $cleanUrl = preg_replace('/\.' . preg_quote($match[0], '/') . '$/i', '-small.' . $ext, $cleanUrl);
-        } else {
-            $cleanUrl .= '-small.webp';
-        }
-        if ($cleanUrl === null) {
-            $cleanUrl = $baseUrl . '-small.webp';
-        }
-    }
-    
-    $match = [];
-    if (!preg_match('/\.(png|jpg|jpeg|webp)$/i', $cleanUrl)) {
-        $cleanUrl .= '.webp';
-    }
-    
-    return htmlspecialchars($cleanUrl);
+    return htmlspecialchars($baseUrl);
 }
 
 function renderNewsItems($news, $isMobile = false) {
@@ -91,10 +66,10 @@ function renderDesktopNews($news) {
         <article class="news-item" aria-labelledby="news-' . htmlspecialchars($item['id']) . '">
             ' . ($item['image_url'] ? '
             <img src="' . getImageUrl(IMG_PATH . $item['image_url']) . '" 
-                 srcset="' . getImageUrl(IMG_PATH . $item['image_url'], true) . ' 300w, ' . getImageUrl(IMG_PATH . $item['image_url']) . ' 600w"
-                 sizes="(max-width: 600px) 300px, 600px"
                  alt="' . htmlspecialchars($item['title']) . '" 
-                 class="news-image" width="300" height="200" loading="lazy" fetchpriority="low">' : '') . '
+                 class="news-image news-image-loading" 
+                 width="300" height="200" loading="lazy" fetchpriority="low" 
+                 onload="this.classList.remove(\'news-image-loading\')">' : '') . '
             <div class="news-content">
                 <div class="news-publisher">
                     ' . ($item['publisher_icon_url'] ? '
@@ -127,10 +102,10 @@ function renderMobileNews($news) {
         <article class="news-card-mobile" aria-labelledby="news-mobile-' . htmlspecialchars($item['id']) . '">
             ' . ($item['image_url'] ? '
             <img src="' . getImageUrl(IMG_PATH . $item['image_url']) . '" 
-                 srcset="' . getImageUrl(IMG_PATH . $item['image_url'], true) . ' 300w, ' . getImageUrl(IMG_PATH . $item['image_url']) . ' 600w"
-                 sizes="(max-width: 600px) 300px, 600px"
                  alt="' . htmlspecialchars($item['title']) . '" 
-                 class="news-image-mobile" width="300" height="200" loading="lazy" fetchpriority="low">' : '') . '
+                 class="news-image-mobile news-image-mobile-loading" 
+                 width="300" height="200" loading="lazy" fetchpriority="low" 
+                 onload="this.classList.remove(\'news-image-mobile-loading\')">' : '') . '
             <div class="news-publisher">
                 ' . ($item['publisher_icon_url'] ? '
                 <img src="' . getImageUrl(IMG_PATH . $item['publisher_icon_url']) . '" 
@@ -221,6 +196,5 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <link rel="stylesheet" href="/widgets/news/styles.css" media="all">
-<noscript><link rel="stylesheet" href="/widgets/news/styles.css"></noscript>
 <link rel="preconnect" href="https://yastatic.net">
 <link rel="preconnect" href="https://mc.yandex.ru">
