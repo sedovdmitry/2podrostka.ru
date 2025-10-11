@@ -65,15 +65,15 @@ function renderDesktopNews($news) {
         $html .= '
         <article class="news-item" aria-labelledby="news-' . htmlspecialchars($item['id']) . '">
             ' . ($item['image_url'] ? '
-            <img src="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '.webp" 
-                 srcset="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '-small.webp 300w, ' . htmlspecialchars(IMG_PATH . $item['image_url']) . '.webp 600w"
+            <img src="' . getImageUrl(IMG_PATH . $item['image_url']) . '" 
+                 srcset="' . getImageUrl(IMG_PATH . $item['image_url'], true) . ' 300w, ' . getImageUrl(IMG_PATH . $item['image_url']) . ' 600w"
                  sizes="(max-width: 600px) 300px, 600px"
                  alt="' . htmlspecialchars($item['title']) . '" 
                  class="news-image" width="300" height="200" loading="lazy" fetchpriority="low">' : '') . '
             <div class="news-content">
                 <div class="news-publisher">
                     ' . ($item['publisher_icon_url'] ? '
-                    <img src="' . htmlspecialchars(IMG_PATH . $item['publisher_icon_url']) . '.webp" 
+                    <img src="' . getImageUrl(IMG_PATH . $item['publisher_icon_url']) . '" 
                          alt="' . htmlspecialchars($item['publisher_name']) . '" 
                          class="publisher-icon" width="20" height="20" loading="lazy">' : '') . '
                     <span class="publisher-name">' . htmlspecialchars($item['publisher_name'] ?? 'Источник') . '</span>
@@ -101,14 +101,14 @@ function renderMobileNews($news) {
         $html .= '
         <article class="news-card-mobile" aria-labelledby="news-mobile-' . htmlspecialchars($item['id']) . '">
             ' . ($item['image_url'] ? '
-            <img src="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '.webp" 
-                 srcset="' . htmlspecialchars(IMG_PATH . $item['image_url']) . '-small.webp 300w, ' . htmlspecialchars(IMG_PATH . $item['image_url']) . '.webp 600w"
+            <img src="' . getImageUrl(IMG_PATH . $item['image_url']) . '" 
+                 srcset="' . getImageUrl(IMG_PATH . $item['image_url'], true) . ' 300w, ' . getImageUrl(IMG_PATH . $item['image_url']) . ' 600w"
                  sizes="(max-width: 600px) 300px, 600px"
                  alt="' . htmlspecialchars($item['title']) . '" 
                  class="news-image-mobile" width="300" height="200" loading="lazy" fetchpriority="low">' : '') . '
             <div class="news-publisher">
                 ' . ($item['publisher_icon_url'] ? '
-                <img src="' . htmlspecialchars(IMG_PATH . $item['publisher_icon_url']) . '.webp" 
+                <img src="' . getImageUrl(IMG_PATH . $item['publisher_icon_url']) . '" 
                      alt="' . htmlspecialchars($item['publisher_name']) . '" 
                      class="publisher-icon" width="20" height="20" loading="lazy">' : '') . '
                 <span class="publisher-name-mobile">' . htmlspecialchars($item['publisher_name'] ?? 'Источник') . '</span>
