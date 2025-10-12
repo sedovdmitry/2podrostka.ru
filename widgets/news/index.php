@@ -3,7 +3,8 @@ require_once './config/constants.php';
 
 // Inline critical CSS
 echo '<style>
-    .news-widget { max-width: 1200px; margin: 0 auto; }
+    .news-widget { max-width: 1200px; margin: 0 auto; height: 2502px; }
+    @media (max-width: 768px) { .news-widget { height: 470px; overflow-y: hidden; } }
     .news-loading { opacity: 0.6; pointer-events: none; }
     .news-image-loading, .news-image-mobile-loading {
         background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
@@ -68,7 +69,8 @@ function renderDesktopNews($news) {
             <img src="' . getImageUrl(IMG_PATH . $item['image_url']) . '" 
                  alt="' . htmlspecialchars($item['title']) . '" 
                  class="news-image news-image-loading" 
-                 width="300" height="200" loading="lazy" fetchpriority="low" 
+                 width="195" height="130"
+                 loading="lazy" fetchpriority="low" 
                  onload="this.classList.remove(\'news-image-loading\')">' : '') . '
             <div class="news-content">
                 <div class="news-publisher">
@@ -104,7 +106,8 @@ function renderMobileNews($news) {
             <img src="' . getImageUrl(IMG_PATH . $item['image_url']) . '" 
                  alt="' . htmlspecialchars($item['title']) . '" 
                  class="news-image-mobile news-image-mobile-loading" 
-                 width="300" height="200" loading="lazy" fetchpriority="low" 
+                 width="230" height="140"
+                 loading="lazy" fetchpriority="low" 
                  onload="this.classList.remove(\'news-image-mobile-loading\')">' : '') . '
             <div class="news-publisher">
                 ' . ($item['publisher_icon_url'] ? '
