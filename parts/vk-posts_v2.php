@@ -1,35 +1,43 @@
-<div id="vk_community_messages" style="opacity: 0; transition: opacity 0.3s;"></div>
+<div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
 <script type="text/javascript">
-  // Функция для lazy-load виджета
-  function loadVKMessagesWidget() {
-    if (document.getElementById('vk_community_messages').dataset.loaded) return; // Уже загружено
+  // Функция для lazy-load виджета стены
+  function loadVKWallWidget() {
+    if (document.getElementById('vk_wall').dataset.loaded) return; // Уже загружено
 
-    // Асинхронная загрузка openapi.js
+    // Асинхронная загрузка openapi.js через Nginx кэш
     const script = document.createElement('script');
-    script.src = 'https://vk.com/js/api/openapi.js?169';
+    script.src = '/vk/openapi.js';
     script.async = true;
     script.onload = function() {
-      // Инициализация Open API
-      VK.init({
-        apiId: 4040691, // Ваш apiId из предыдущего примера
-        onlyWidgets: true
-      });
-      // Инициализация виджета сообщений с оптимизированными параметрами
-      VK.Widgets.CommunityMessages("vk_community_messages", 62738566, {
-        welcomeScreen: 0, // Отключаем экран приветствия
-        expanded: 0, // Не раскрывать сразу
-        disableNewMessagesSound: 1, // Отключить звук новых сообщений
-        disableExpandChatSound: 1, // Отключить звук раскрытия
-        disableButtonTooltip: 1, // Отключить всплывающую подсказку
-        widgetPosition: 'right', // Правое положение (по умолчанию)
-        buttonType: 'blue_circle', // Стандартная кнопка
-        onCanNotWrite: function(reason) {
-          console.log('Ошибка виджета сообщений: ', reason);
-          // Можно показать пользователю уведомление, например, через alert
-        }
-      });
-      document.getElementById('vk_community_messages').dataset.loaded = 'true';
-      document.getElementById('vk_community_messages').style.opacity = '1';
+      try {
+        // Инициализация Open API
+        VK.init({
+          apiId: 4040691,
+          onlyWidgets: true
+        });
+        // Инициализация виджета стены с оптимизированными параметрами
+        VK.Widgets.Group("vk_wall", {
+          mode: 4, // Режим стены (новости)
+          width: 262, // Такая же ширина, как в vk_groups
+          height: 400, // Ограничим высоту для меньшей загрузки
+          no_cover: 1, // Отключаем обложку для экономии данных
+          wide: 1, // Добавляем кнопку "Мне нравится" и фото
+          color1: "FFFFFF",
+          color2: "000000",
+          color3: "5181B8"
+        }, 62738566);
+        document.getElementById('vk_wall').dataset.loaded = 'true';
+        document.getElementById('vk_wall').style.opacity = '1';
+      } catch (e) {
+        console.error('Ошибка инициализации виджета стены: ', e);
+        document.getElementById('vk_wall').innerHTML = 
+          'Ошибка загрузки виджета. Посетите наше сообщество: <a href="https://vk.com/polovoevospitanie?from=2podrostka.ru">ВКонтакте</a>';
+      }
+    };
+    script.onerror = function() {
+      console.error('Ошибка загрузки /vk/openapi.js');
+      document.getElementById('vk_wall').innerHTML = 
+        'Не удалось загрузить скрипт. Посетите наше сообщество: <a href="https://vk.com/polovoevospitanie?from=2podrostka.ru">ВКонтакте</a>';
     };
     document.head.appendChild(script);
   }
@@ -39,14 +47,14 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          loadVKMessagesWidget();
+          loadVKWallWidget();
           observer.unobserve(entry.target);
         }
       });
-    }, { rootMargin: '200px' }); // Загружаем за 200px до видимости
-    observer.observe(document.getElementById('vk_community_messages'));
+    }, { rootMargin: '200px' });
+    observer.observe(document.getElementById('vk_wall'));
   } else {
     // Fallback для старых браузеров
-    loadVKMessagesWidget();
+    loadVKWallWidget();
   }
 </script>
