@@ -1,4 +1,3 @@
-<div id="vk_groups" style="opacity: 0; transition: opacity 0.3s;"></div>
 <script type="text/javascript">
   // Функция для lazy-load виджета
   function loadVKWidget() {

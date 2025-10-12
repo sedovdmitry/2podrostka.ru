@@ -14,4 +14,5 @@
     <li style="float:right;">
       <div id="vk_like"></div>
     </li>
+  </ul>
 </div>

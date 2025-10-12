@@ -461,100 +461,6 @@
               <br />
               <?php include('./parts/partners.php'); ?>
               <br />
-              </ul>
-              <div align="center">
-                <style type="text/css">
-                  .fbba-green,
-                  .fbbb-green,
-                  .fbbc-green,
-                  .fbbd-green,
-                  .fbbe-green,
-                  .fbbg-green {
-                    display: block;
-                    overflow: hidden;
-                    font-size: 1px;
-                  }
-
-                  .fbba-green {
-                    margin: 0 5px;
-                  }
-
-                  .fbba-green,
-                  .fbbb-green,
-                  .fbbc-green,
-                  .fbbe-green,
-                  .fbbd-green {
-                    height: 1px;
-                  }
-
-                  .fbbb-green {
-                    border-width: 0 2px;
-                    margin: 0 3px;
-                  }
-
-                  .fbbc-green {
-                    margin: 0 2px;
-                  }
-
-                  .fbbc-green,
-                  .fbbd-green {
-                    border-width: 0 1px;
-                  }
-
-                  .fbbd-green {
-                    margin: 0 1px;
-                  }
-
-                  #subscribe_form-green {
-                    width: 220px;
-                  }
-
-                  #subscribe_form-green .fbba-green,
-                  .fbbb-green,
-                  .fbbc-green,
-                  .fbbd-green {
-                    background: #e0f6c4;
-                  }
-                </style>
-                <form target="_blank" action="https://subscribe.ru/member/quick" method="get">
-                  <input type="hidden" name="action" value="quick">
-                  <input type="hidden" name="src" value="list_home.children.sexeducation">
-                  <div id="subscribe_form-green">
-                    <b class="fbba-green"></b>
-                    <b class="fbbb-green"></b>
-                    <b class="fbbc-green"></b>
-                    <b class="fbbd-green"></b>
-                    <table style="background: url(https://image.subscribe.ru/subut/s.png) no-repeat #e0f6c4;" cellspacing=0 cellpadding=0>
-                      <tr>
-                        <td colspan=2 style="padding: 5px 10px 5px 10px;">
-                          <INPUT TYPE=hidden NAME=grp VALUE="home.children.sexeducation">
-                          <a href="https://subscribe.ru/catalog/home.children.sexeducation" target="_blank" style="font-weight:bold;color: #000000;font-family:Trebuchet MS, Helvetica, sans-serif;font-size:14px;">Два подростка. Половое воспитание детей и школьников</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan=2 style="padding: 5px 10px 5px 10px;">
-                          <input style="border:1px solid #3b6e22;color:#666666;width:200px;background-color:#fff;font-family:Trebuchet MS, Verdana, sans-serif;font-size:12px;" type="text" name="email" id="email" value="ваш e-mail" onFocus="this.value = '';return false;" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 5px 10px 5px 10px;">&nbsp;</td>
-                        <td align="right" style="padding: 5px 10px 5px 10px;">
-                          <input type="submit" value="" style="background: url(https://image.subscribe.ru/subut/button-green.gif) no-repeat;border:none;width:93px;height:21px;font-size:12px;font-family:Trebuchet MS, Verdana, Arial; width:100px;">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" colspan=2>
-                          <A HREF="mailto:home.children.sexeducation-sub@subscribe.ru?subject=subscribe" style="color: #000000;font-family:Verdana, sans-serif;font-size:10px;">Подписаться письмом</A>
-                        </td>
-                      </tr>
-                    </table>
-                    <b class="fbbd-green"></b>
-                    <b class="fbbc-green"></b>
-                    <b class="fbbb-green"></b>
-                    <b class="fbba-green"></b>
-                  </div>
-                </form>
-                <br />
                 <div align="center" style="background-image: url(img/kontrol/methods_bg.png); overflow: auto; repeat;" class="clear_fix">
                   <small>
                     <h3>
@@ -575,8 +481,7 @@
                 </div>
               </div>
               <br />
-              <!-- Асинхронная загрузка ВКонтакте сообщество -->
-              <div align="center" id="script_block" class="script_block"></div>
+              <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
             </div>
             <br />
             <p></p>

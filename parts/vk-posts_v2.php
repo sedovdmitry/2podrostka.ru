@@ -1,4 +1,3 @@
-<div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
 <script type="text/javascript">
   // Функция для lazy-load виджета стены
   function loadVKWallWidget() {

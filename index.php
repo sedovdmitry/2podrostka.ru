@@ -277,108 +277,14 @@
         <br />
         <?php include('./parts/partners.php'); ?>
         <br />
-        </ul>
-        <div align="center">
-          <style type="text/css">
-            .fbba-blue,
-            .fbbb-blue,
-            .fbbc-blue,
-            .fbbd-blue,
-            .fbbe-blue,
-            .fbbg-blue {
-              display: block;
-              overflow: hidden;
-              font-size: 1px;
-            }
-
-            .fbba-blue {
-              margin: 0 5px;
-            }
-
-            .fbba-blue,
-            .fbbb-blue,
-            .fbbc-blue,
-            .fbbe-blue,
-            .fbbd-blue {
-              height: 1px;
-            }
-
-            .fbbb-blue {
-              border-width: 0 2px;
-              margin: 0 3px;
-            }
-
-            .fbbc-blue {
-              margin: 0 2px;
-            }
-
-            .fbbc-blue,
-            .fbbd-blue {
-              border-width: 0 1px;
-            }
-
-            .fbbd-blue {
-              margin: 0 1px;
-            }
-
-            #subscribe_form-blue {
-              width: 220px;
-            }
-
-            #subscribe_form-blue .fbba-blue,
-            .fbbb-blue,
-            .fbbc-blue,
-            .fbbd-blue {
-              background: #e1ecf3;
-            }
-          </style>
-          <form target="_blank" action="https://subscribe.ru/member/quick" method="get">
-            <input type="hidden" name="action" value="quick">
-            <input type="hidden" name="src" value="list_home.children.sexeducation">
-            <div id="subscribe_form-blue">
-              <b class="fbba-blue"></b>
-              <b class="fbbb-blue"></b>
-              <b class="fbbc-blue"></b>
-              <b class="fbbd-blue"></b>
-              <table style="background: url(https://image.subscribe.ru/subut/s.png) no-repeat #e1ecf3;" cellspacing=0 cellpadding=0>
-                <tr>
-                  <td colspan=2 style="padding: 5px 10px 5px 10px;">
-                    <INPUT TYPE=hidden NAME=grp VALUE="home.children.sexeducation">
-                    <a href="https://subscribe.ru/catalog/home.children.sexeducation" target="_blank" style="font-weight:bold;color: #000000;font-family:Trebuchet MS, Helvetica, sans-serif;font-size:14px;">Два подростка. Половое воспитание детей и школьников</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan=2 style="padding: 5px 10px 5px 10px;">
-                    <input style="border:1px solid #003366;color:#666666;width:200px;background-color:#fff;font-family:Trebuchet MS, Verdana, sans-serif;font-size:12px;" type="text" name="email" id="email" value="ваш e-mail" onFocus="this.value = '';return false;" />
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 5px 10px 5px 10px;">&nbsp;</td>
-                  <td align="right" style="padding: 5px 10px 5px 10px;">
-                    <input type="submit" value="Отправить" style="background: url(https://image.subscribe.ru/subut/button-blue.gif) no-repeat;border:none;width:93px;height:21px;font-size:12px;font-family:Trebuchet MS, Verdana, Arial; width:100px;">
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" colspan=2>
-                    <A HREF="mailto:home.children.sexeducation-sub@subscribe.ru?subject=subscribe" style="color: #000000;font-family:Verdana, sans-serif;font-size:10px;">Подписаться письмом</A>
-                  </td>
-                </tr>
-              </table>
-              <b class="fbbd-blue"></b>
-              <b class="fbbc-blue"></b>
-              <b class="fbbb-blue"></b>
-              <b class="fbba-blue"></b>
-            </div>
-          </form>
-          <br />
           <div align="center" style="background-image: url(img/kontrol/methods_bg.png); overflow: auto; repeat;" class="clear_fix">
             <br /> 
             <?php include('./parts/right-links.php'); ?>
           </div>
+          <br />
+          <div id="vk_groups" style="opacity: 0; transition: opacity 0.3s;"></div>
         </div>
         <br />
-        <!-- Асинхронная загрузка ВКонтакте сообщество -->
-        <div align="center" id="script_block" class="script_block"></div>
       </div>
       <br />
       <div>
