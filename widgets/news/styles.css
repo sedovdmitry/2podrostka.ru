@@ -11,7 +11,7 @@
 
 @media (max-width: 768px) {
   .news-widget {
-    height: 470px; /* Указано для мобильных с горизонтальным скроллом */
+    height: 480px; /* Указано для мобильных с горизонтальным скроллом */
     overflow-y: hidden; /* Горизонтальный скролл в .news-horizontal-scroll */
   }
 }

@@ -4,7 +4,7 @@ require_once './config/constants.php';
 // Inline critical CSS
 echo '<style>
     .news-widget { max-width: 1200px; margin: 0 auto; height: 2502px; }
-    @media (max-width: 768px) { .news-widget { height: 470px; overflow-y: hidden; } }
+    @media (max-width: 768px) { .news-widget { height: 480px; overflow-y: hidden; } }
     .news-loading { opacity: 0.6; pointer-events: none; }
     .news-image-loading, .news-image-mobile-loading {
         background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
