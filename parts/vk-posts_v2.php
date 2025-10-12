@@ -1,6 +1,4 @@
 <script type="text/javascript">
-  console.log('Начало загрузки vk-posts_v2.php, браузер: ' + navigator.userAgent);
-
   // Функция для показа fallback
   function showFallback() {
     const fallbackElement = document.getElementById('vk_wall_fallback');
@@ -11,15 +9,12 @@
 
   // Функция для lazy-load виджета стены
   function loadVKWallWidget() {
-    console.log('Вызов loadVKWallWidget');
     const widgetElement = document.getElementById('vk_wall');
     if (!widgetElement) {
-      console.error('Элемент vk_wall не найден в DOM');
       showFallback();
       return;
     }
     if (widgetElement.dataset.loaded) {
-      console.log('Виджет уже загружен');
       return;
     }
 
@@ -28,13 +23,11 @@
     script.src = 'https://vk.com/js/api/openapi.js?169';
     script.async = true;
     script.onload = function() {
-      console.log('openapi.js успешно загружен');
       try {
         VK.init({
           apiId: 4040691,
           onlyWidgets: true
         });
-        console.log('VK.init выполнен');
         VK.Widgets.Group("vk_wall", {
           mode: 4, // Режим стены (новости)
           width: 262,
@@ -45,7 +38,6 @@
           color2: "000000",
           color3: "5181B8"
         }, 62738566);
-        console.log('VK.Widgets.Group инициализирован');
         widgetElement.dataset.loaded = 'true';
         widgetElement.style.opacity = '1';
       } catch (e) {
@@ -57,7 +49,6 @@
       console.error('Ошибка загрузки openapi.js');
       showFallback();
     };
-    console.log('Добавление скрипта openapi.js в head');
     document.head.appendChild(script);
   }
 
@@ -68,11 +59,9 @@
       console.error('Элемент vk_wall не найден для IntersectionObserver');
       showFallback();
     } else {
-      console.log('Запуск IntersectionObserver для vk_wall');
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            console.log('vk_wall вошёл в зону видимости');
             loadVKWallWidget();
             observer.unobserve(entry.target);
           }
