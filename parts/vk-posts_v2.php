@@ -10,18 +10,16 @@
     script.async = true;
     script.onload = function() {
       try {
-        // Инициализация Open API
         VK.init({
           apiId: 4040691,
           onlyWidgets: true
         });
-        // Инициализация виджета стены с оптимизированными параметрами
         VK.Widgets.Group("vk_wall", {
-          mode: 4, // Режим стены (новости)
-          width: 262, // Такая же ширина, как в vk_groups
-          height: 400, // Ограничим высоту для меньшей загрузки
-          no_cover: 1, // Отключаем обложку для экономии данных
-          wide: 1, // Добавляем кнопку "Мне нравится" и фото
+          mode: 4,
+          width: 262,
+          height: 400,
+          no_cover: 1,
+          wide: 1,
           color1: "FFFFFF",
           color2: "000000",
           color3: "5181B8"
@@ -42,7 +40,6 @@
     document.head.appendChild(script);
   }
 
-  // Intersection Observer для загрузки при видимости
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -54,7 +51,6 @@
     }, { rootMargin: '200px' });
     observer.observe(document.getElementById('vk_wall'));
   } else {
-    // Fallback для старых браузеров
     loadVKWallWidget();
   }
 </script>

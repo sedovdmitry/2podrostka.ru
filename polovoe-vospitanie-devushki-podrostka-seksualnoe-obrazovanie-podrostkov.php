@@ -499,7 +499,7 @@
     </script>
     <script async="true" src="/js/picturefill.min.js"></script>
 
-    <?php include('./parts/vk-posts_v2.php'); ?>
+    <?php include('./parts/vk-posts.php'); ?>
     <?php include('./parts/footer-scripts.php'); ?>
   </body>
 </html>

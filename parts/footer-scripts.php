@@ -1,5 +1,5 @@
 <script async src="https://yastatic.net/share2/share.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="/js/jquery.1.8.0.min.js"></script>
 <!-- JavaScript -->
 <script async src="./gzip-js/default.js"></script>
 <!--<script src="gzip-js/bootstrap.js"></script>-->
