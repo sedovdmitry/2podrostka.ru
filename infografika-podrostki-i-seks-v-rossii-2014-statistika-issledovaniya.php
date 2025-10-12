@@ -291,7 +291,7 @@
         </div>
         <br />
         <p>
-          Первоисточник: <a href="https://2podrostka.ru/go.php?url=https://www.johnstonsarchive.net/policy/abortion/mapeuropeabrate.html" target="_blank">johnstonsarchive.net</a>. Данные обновлены за 2022 год.
+          Первоисточник: <a href="https://www.johnstonsarchive.net/policy/abortion/mapeuropeabrate.html" target="_blank">johnstonsarchive.net</a>. Данные обновлены за 2022 год.
         </p>
 
         <p>В России количество абортов немногим меньше количества рожденных младенцев даже по официальным данным: <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D0%BE%D1%80%D1%82#.D0.9A.D0.BE.D0.BB.D0.B8.D1.87.D0.B5.D1.81.D1.82.D0.B2.D0.BE_.D0.B0.D0.B1.D0.BE.D1.80.D1.82.D0.BE.D0.B2_.D0.B2_.D0.A0.D0.BE.D1.81.D1.81.D0.B8.D0.B8_.D0.B8_.D0.B2_.D0.BC.D0.B8.D1.80.D0.B5" target="_blank">42% в 2009 году</a>, в США – 19% (2008), а в среднем в мире – 22%. </p>
