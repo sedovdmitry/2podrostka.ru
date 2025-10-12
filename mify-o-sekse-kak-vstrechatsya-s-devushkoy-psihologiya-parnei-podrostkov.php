@@ -470,7 +470,6 @@
             <br />
           </div>
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
               <div align="center">
                 <!--
                 <? // php include('./parts/ads_side.php');?>
@@ -494,7 +493,6 @@
                   <!-- реклама -->
                 </div>
               </div>
-            </div>
           </div>
         <br>
         <!-- links with rollover effects --> <?php include('parts/footer-links.php'); ?>

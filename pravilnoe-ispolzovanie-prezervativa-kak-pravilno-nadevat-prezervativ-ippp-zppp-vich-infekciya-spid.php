@@ -450,7 +450,6 @@
             <br />
           </div>
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
               <!-- 
               <div align="center">
                 <? // php include('./parts/ads_side.php');?>
@@ -484,9 +483,7 @@
                 <div id="vk_wall_fallback" style="display: none;">Посетите наше сообщество: <a href="https://vk.com/polovoevospitanie?from=2podrostka.ru">ВКонтакте</a></div>
               </div>
               <br />
-            </div>
             <br />
-            <p></p>
             <div>
               <div align="center" class="sidebar" data-sticky_column>
                 <!-- реклама -->
