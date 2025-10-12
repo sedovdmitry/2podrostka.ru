@@ -483,11 +483,10 @@
                   <div align="center" style="background-image: url(img/kontrol/methods_bg.png); overflow: auto; repeat;" class="clear_fix">
                     <br /> <?php include('./parts/right-links.php'); ?>
                   </div>
+                  <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s; margin-top: 19px;"></div>
+                  <!-- Fallback для ошибок -->
+                  <div id="vk_wall_fallback" style="display: none;">Посетите наше сообщество: <a href="https://vk.com/polovoevospitanie?from=2podrostka.ru">ВКонтакте</a></div>
                 </div>
-                <br />
-                <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
-                <!-- Fallback для ошибок -->
-                <div id="vk_wall_fallback" style="display: none;">Посетите наше сообщество: <a href="https://vk.com/polovoevospitanie?from=2podrostka.ru">ВКонтакте</a></div>
               </div>
               <br />
               <div>
