@@ -370,7 +370,7 @@
               </div>
             </div>
             <br />
-            <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
+            <!-- <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div> -->
           </div>
           <br />
           <p></p>
@@ -382,35 +382,41 @@
             <br />
           </div>
         </div>
-      </div>
       <br />
-      <!-- links with rollover effects --> <?php include('parts/footer-links.php'); ?> <footer>
+      <!-- links with rollover effects --> <?php include('parts/footer-links.php'); ?> 
+       <footer>
         <div class="row">
-          <div class="col-lg-12" style="background-image: url(img/kontrol/methods_bg.png); overflow: auto; repeat;" class="clear_fix">
-            <br />
-            <center>
-              <p>Все права защищены <b>
-                  <a href="https://2podrostka.ru">2podrostka.ru</a>
-                </b>
-                </a> – <a href="https://2podrostka.ru">
-                  <b>Половое воспитание</b>
+          <div class="col-lg-12 clear_fix" style="background-image: url(img/kontrol/methods_bg.png); background-repeat: repeat; overflow: hidden; max-width: 100%;">
+            <div class="text-center">
+                <p>Все права защищены <b><a href="https://2podrostka.ru">2podrostka.ru</a></b> – <b>Половое воспитание</b></p>
+                <p>&copy; МАУ ЦКО ДМ «Молодежная инициатива», 2013-2025</p>
+                <p>Проект по половому и сексуальному образованию подростков</p>
+                <p>При копировании материалов ссылка на сайт обязательна.</p>
+            </div>
+            <div class="text-center">
+                <!-- LiveInternet counter -->
+                <script type="text/javascript">
+                    document.write("<a href='https://www.liveinternet.ru/click' target='_blank><img src='//counter.yadro.ru/hit?t45.10;r" + escape(document.referrer) + ((typeof(screen) == "undefined") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random() + "' alt='' title='LiveInternet' border='0' width='31' height='31'><\/a>");
+                </script>
+                <!-- Yandex.Metrika informer -->
+                <a href="https://metrika.yandex.ru/stat/?id=23378290&amp;from=informer" target="_blank" rel="nofollow">
+                    <img src="https://informer.yandex.ru/informer/23378290/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width: 88px; height: 31px; border: 0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="23378290" data-lang="ru"/>
                 </a>
-                <center>
-                  <p>&copy; МАУ ЦКО ДМ «Молодежная инициатива», 2013- <?php echo date("Y"); ?></p>
-                  <p>Проект по половому и сексуальному образованию подростков</p>
-                </center>
-                <center>
-                  <p>При копировании материалов ссылка на сайт обязательна.</p>
-                </center>
-                <br />
-              <?php include('./parts/metrics.php'); ?>
+                <!-- Rating@Mail.ru logo -->
+                <a target="_blank" href="https://top.mail.ru/jump?from=2542832">
+                    <img src="//top-fwz1.mail.ru/counter?id=2542832;t=410;l=1" style="border: 0; width: 88px; height: 31px;" alt="Рейтинг@Mail.ru" />
+                </a>
+                <!-- Top100 (Kraken) Widget -->
+                <span id="top100_widget"></span>
+                <noscript>
+                    <img src="//counter.rambler.ru/top100.cnt?pid=3045070" alt="Топ-100" />
+                </noscript>
+              </div>
+            </div>
           </div>
-        </div>
       </footer>
     </div>
     <!-- /container -->
-    </div>
-    </div>
     <?php include('./parts/vk-posts_v2.php'); ?>
     <?php include('./parts/footer-scripts.php'); ?>
   </body>

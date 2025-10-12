@@ -485,7 +485,7 @@
                   </div>
                 </div>
                 <br />
-                <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
+                <!-- <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div> -->
               </div>
               <br />
               <div>
@@ -495,7 +495,6 @@
               </div>
             </div>
           </div>
-        </div>
         <br>
         <!-- links with rollover effects --> <?php include('parts/footer-links.php'); ?>
         <footer>

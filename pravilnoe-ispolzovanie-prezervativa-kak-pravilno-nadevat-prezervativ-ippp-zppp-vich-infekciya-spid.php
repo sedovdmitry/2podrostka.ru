@@ -481,7 +481,7 @@
                 </div>
               </div>
               <br />
-              <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
+              <!-- <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div> -->
             </div>
             <br />
             <p></p>
@@ -493,10 +493,9 @@
             </div>
             <br />
           </div>
-        </div>
         <br />
-        <br />
-        <!-- links with rollover effects --> <?php include('parts/footer-links.php'); ?> <footer>
+        <!-- links with rollover effects --> <?php include('parts/footer-links.php'); ?> 
+         <footer>
           <div class="row">
             <div class="col-lg-12" style="background-image: url(img/kontrol/methods_bg.png); overflow: auto; repeat;" class="clear_fix">
               <br />
@@ -528,7 +527,7 @@
       </script>
       <script async="true" src="/js/picturefill.min.js"></script>
 
-      <?php include('./parts/vk-posts_2.php'); ?>
+      <?php include('./parts/vk-posts_v2.php'); ?>
       <?php include('./parts/footer-scripts.php'); ?>
   </body>
 </html>

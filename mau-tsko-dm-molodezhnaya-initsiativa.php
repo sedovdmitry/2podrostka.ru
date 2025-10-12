@@ -215,7 +215,7 @@
             </div>
           </div>
           <br>
-          <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
+          <!-- <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div> -->
         </div>
         <br>
         <div>

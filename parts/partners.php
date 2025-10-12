@@ -10,9 +10,13 @@
     <br />
   </center>
   <br />
-  <ul style="height:40px;list-style:none;margin:20;padding:0;">
-    <li style="float:right;">
-      <div id="vk_like"></div>
-    </li>
-  </ul>
+  <?php
+    /*
+      <ul style="height:40px;list-style:none;margin:20;padding:0;">
+        <li style="float:right;">
+          <div id="vk_like"></div>
+        </li>
+      </ul>
+  */
+  ?>
 </div>
