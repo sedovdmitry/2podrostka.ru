@@ -213,9 +213,10 @@
               <br>
               <?php include('./parts/right-links.php'); ?>
             </div>
+            <br />
+            <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div>
           </div>
           <br>
-          <!-- <div id="vk_wall" style="opacity: 0; transition: opacity 0.3s;"></div> -->
         </div>
         <br>
         <div>
