@@ -204,3 +204,6 @@ resize.php
 simple.php
 adaptive-images.php
 settings/
+
+# 
+node_modules

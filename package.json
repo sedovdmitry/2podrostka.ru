@@ -1,0 +1,30 @@
+{
+  "name": "2podrostka",
+  "version": "1.0.0",
+  "description": "Два подростка - сайт о половом воспитании детей и подростков",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedovdmitry/2podrostka.ru.git"
+  },
+  "keywords": [
+    "sex education",
+    "sexedu",
+    "половое воспитание",
+    "сексуальное образование"
+  ],
+  "author": "Дмитрий Седов",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sedovdmitry/2podrostka.ru/issues"
+  },
+  "homepage": "https://github.com/sedovdmitry/2podrostka.ru#readme",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.24.0",
+    "eslint": "^9.37.0",
+    "prettier": "^3.6.2"
+  }
+}
