@@ -386,7 +386,7 @@
       <!-- links with rollover effects --> <?php include('parts/footer-links.php'); ?> 
        <footer>
         <div class="row">
-          <div class="col-lg-12 clear_fix" style="background-image: url(img/kontrol/methods_bg.png); background-repeat: repeat; overflow: hidden; max-width: 100%;">
+          <div class="col-lg-12" style="background-image: url(img/kontrol/methods_bg.png); background-repeat: repeat; overflow: hidden; max-width: 100%;padding: 20px 0;">
             <div class="text-center">
                 <p>Все права защищены <b><a href="https://2podrostka.ru">2podrostka.ru</a></b> – <b>Половое воспитание</b></p>
                 <p>&copy; МАУ ЦКО ДМ «Молодежная инициатива», 2013-2025</p>
