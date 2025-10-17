@@ -89,9 +89,9 @@
     <div class="container" style="margin-top: 30px">
       <div class="row">
         <div class="col-lg-12">
-            <?php
-              include($_SERVER['DOCUMENT_ROOT'] . '/widgets/news/index.php');
-            ?>
+          <?php
+            include($_SERVER['DOCUMENT_ROOT'] . '/widgets/news/index.php');
+          ?>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html" class="rollover-deti" aria-label="Половое воспитание в семье"></a>
+                  <a href="polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html" class="rollover-deti skeleton-loading rollover-skeleton" aria-label="Половое воспитание в семье" loading="lazy"></a>
                 </center>
                 <h3>
                   <a href="polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html">Половое воспитание в семье</a>
@@ -134,7 +134,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.html" class="rollover-karta" aria-label="Инфографика исследований о подростках"></a>
+                  <a href="infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.html" class="rollover-karta skeleton-loading rollover-skeleton" aria-label="Инфографика исследований о подростках" loading="lazy"></a>
                 </center>
                 <h3>
                   <a href="infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.html">Инфографика последних научных исследований о подростках</a>
@@ -151,7 +151,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.html" class="rollover-guy" aria-label="Психология парней подростков"></a>
+                  <a href="mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.html" class="rollover-guy skeleton-loading rollover-skeleton" aria-label="Психология парней подростков" loading="lazy"></a>
                 </center>
                 <h3>
                   <a href="mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.html">Как начать встречаться с девушкой</a>
@@ -164,7 +164,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.html" class="rollover-para" aria-label="Защита от венерических заболеваний"></a>
+                  <a href="pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.html" class="rollover-para skeleton-loading rollover-skeleton" aria-label="Защита от венерических заболеваний" loading="lazy"></a>
                 </center>
                 <h3>
                   <a href="pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.html">А вы тоже боитесь венерических заболеваний?</a>
@@ -181,7 +181,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.html" class="rollover-girl" aria-label="Половое воспитание девушек"></a>
+                  <a href="polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.html" class="rollover-girl skeleton-loading rollover-skeleton" aria-label="Половое воспитание девушек" loading="lazy"></a>
                 </center>
                 <h3>
                   <a href="polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.html">Как стать богиней любви без последствий</a>
@@ -195,7 +195,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <center>
-                  <a href="kontrol-rozhdaemosti-metody-kontracepcii.html" class="rollover-panel" aria-label="Методы контрацепции"></a>
+                  <a href="kontrol-rozhdaemosti-metody-kontracepcii.html" class="rollover-panel skeleton-loading rollover-skeleton" aria-label="Методы контрацепции" loading="lazy"></a>
                 </center>
                 <h3>
                   <a href="kontrol-rozhdaemosti-metody-kontracepcii.html">Методы контрацепции для школьников-подростков</a>

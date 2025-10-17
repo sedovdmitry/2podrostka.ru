@@ -157,9 +157,6 @@
               <li>Развитие туризма на территории Балаковского муниципального района.</li>
             </ul>
             <br />
-            <div class="video" align="center">
-              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/rRyVe12x0WE?si=V2hSfxxOdMCh9uSU" title="День открытых дверей центра Молодежная инициатива г. Балаково" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
             <h3>
               Как до нас добраться
             </h3>
