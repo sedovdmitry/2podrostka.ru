@@ -35,14 +35,76 @@
 
     <style>
       body {
-        background-image: url('img/background/blue.png');
+        background-image: url('/img/background/blue.png');
         background-repeat: repeat;
         background-attachment: fixed;
       }
+      .hero #cafe {
+        width: 100%;
+        height:400px;
+        display: inline-block;
+        vertical-align: middle;
+        font: 0/0 serif;
+        text-shadow: none;
+        color: transparent;
+        background-size: cover;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+    }
+    .hero #cafe .inner {
+        padding-top: 50%; /* высота/ширина изображения */
+        display: block;
+        height: 0;
+    }
+
+    /* default screen, non-retina */
+    .hero #cafe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+
+    @media only screen and (max-width: 320px) {
+      /* Small screen, non-retina */
+      .hero #cafe { background-image: url("/ai-cache/270/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: 320px),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: 320px),
+    only screen and (   -moz-min-device-pixel-ratio: 2)      and (max-width: 320px),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: 320px),
+    only screen and (        min-device-pixel-ratio: 2)      and (max-width: 320px),
+    only screen and (                min-resolution: 192dpi) and (max-width: 320px),
+    only screen and (                min-resolution: 2dppx)  and (max-width: 320px) {
+      /* Small screen, retina */
+      .hero #cafe { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+    }
+    @media only screen and (min-width: 321px) and (max-width: 538px) {
+      /* Medium screen, non-retina */
+      .hero #cafe { background-image: url("/ai-cache/480/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+    only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 321px) and (max-width: 538px),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 321px) and (max-width: 538px),
+    only screen and (                min-resolution: 192dpi) and (min-width: 321px) and (max-width: 538px),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 321px) and (max-width: 538px) {
+      /* Medium screen, retina */
+      .hero #cafe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 539px),
+    only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 539px),
+    only screen and (   -moz-min-device-pixel-ratio: 2)      and (min-width: 539px),
+    only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 539px),
+    only screen and (        min-device-pixel-ratio: 2)      and (min-width: 539px),
+    only screen and (                min-resolution: 192dpi) and (min-width: 539px),
+    only screen and (                min-resolution: 2dppx)  and (min-width: 539px) {
+      /* Large screen, retina */
+      .hero #cafe { background-image: url("/ai-cache/768/sekseducation-paren-i-devushka-seksualnoe-obrazovanie-2-400.jpg"); }
+    }
     </style>
     <title>Половое воспитание детей/подростков, сексуальное образование</title>
     <link rel="stylesheet" href="/css/bootstrap-3.1.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/css/custom.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/css/custom.css?v=1" media="print" onload="this.media='all'">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,7 +135,7 @@
     </div>
     <?php include('./parts/nav.php'); ?>
     <div class="hero">
-      <div id="cafe" role="img" aria-label="половое воспитание девушки-подростка">
+      <div id="cafe" role="img" aria-label="половое воспитание детей и подросков">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -88,7 +150,7 @@
     <!-- Блок новостей -->
     <div class="container" style="margin-top: 30px">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 news-conainer">
           <?php
             include($_SERVER['DOCUMENT_ROOT'] . '/widgets/news/index.php');
           ?>

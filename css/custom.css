@@ -43,3 +43,9 @@
     background-position: -200% 0;
   }
 }
+
+@media (max-width: 768px) {
+  .news-conainer {
+    padding: 0;
+  }
+}

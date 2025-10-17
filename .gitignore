@@ -205,5 +205,9 @@ simple.php
 adaptive-images.php
 settings/
 
-# 
+# Зависимости
 node_modules
+
+# Данные
+/public/video
+/assets/video
