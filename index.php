@@ -454,16 +454,33 @@ $content = ob_get_clean();
 @file_put_contents($cache_file, $content);
 @file_put_contents($hash_file, $currentHash);
 
-// Обновляем lastmod в sitemap.xml
 $sitemap = __DIR__ . '/sitemap.xml';
 if (file_exists($sitemap)) {
     $xml = file_get_contents($sitemap);
-    $xml = preg_replace(
-        '/(<loc>https:\/\/2podrostka\.ru\/<\/loc>\s*<lastmod>)[^<]+/',
-        '$1' . gmdate('Y-m-d\TH:i:s\Z'),
-        $xml
-    );
-    @file_put_contents($sitemap, $xml);
+    
+    // Добавляем главную страницу, если её нет вообще
+    if (!str_contains($xml, '<loc>https://2podrostka.ru/</loc>')) {
+        $newEntry = "\n  <url>\n    <loc>https://2podrostka.ru/</loc>\n    <lastmod>" . gmdate('Y-m-d\TH:i:s\Z') . "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.00</priority>\n  </url>";
+        $xml = str_replace('</urlset>', $newEntry . "\n</urlset>", $xml);
+    } else {
+        // Просто обновляем существующую запись главной
+        $xml = preg_replace(
+            '/(<loc>https:\/\/2podrostka\.ru\/<\/loc>\s*<lastmod>)[^<]+(<)/',
+            '$1' . gmdate('Y-m-d\TH:i:s\Z') . '$2',
+            $xml
+        );
+    }
+    
+    file_put_contents($sitemap, $xml);
+    
+    // Обновляем .br версию для Brotli
+    if (function_exists('brotli_compress')) {
+        file_put_contents($sitemap . '.br', brotli_compress($xml, 6));
+    }
+    
+    // Обновляем время модификации — Nginx сразу увидит
+    touch($sitemap);
+    if (file_exists($sitemap . '.br')) touch($sitemap . '.br');
 }
 
 // Отдаём готовый HTML
