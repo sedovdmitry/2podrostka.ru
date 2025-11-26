@@ -456,29 +456,32 @@ $content = ob_get_clean();
 
 $sitemap = __DIR__ . '/sitemap.xml';
 if (file_exists($sitemap)) {
+    // Правильный формат, как у тебя в файле: 2025-11-26T18:40:12+00:00
+    $today = gmdate('Y-m-d\TH:i:s\Z', time());
+    $today = str_replace('Z', '+00:00', $today);  // ← ЭТО КЛЮЧЕВАЯ СТРОКА!
+
     $xml = file_get_contents($sitemap);
-    
-    // Добавляем главную страницу, если её нет вообще
+
+    // Обновляем ВСЕ lastmod на сегодняшнюю дату
+    $xml = preg_replace(
+        '/<lastmod>[^<]+<\/lastmod>/',
+        "<lastmod>{$today}</lastmod>",
+        $xml
+    );
+
+    // На всякий случай — если главной нет, добавляем
     if (!str_contains($xml, '<loc>https://2podrostka.ru/</loc>')) {
-        $newEntry = "\n  <url>\n    <loc>https://2podrostka.ru/</loc>\n    <lastmod>" . gmdate('Y-m-d\TH:i:s\Z') . "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.00</priority>\n  </url>";
-        $xml = str_replace('</urlset>', $newEntry . "\n</urlset>", $xml);
-    } else {
-        // Просто обновляем существующую запись главной
-        $xml = preg_replace(
-            '/(<loc>https:\/\/2podrostka\.ru\/<\/loc>\s*<lastmod>)[^<]+(<)/',
-            '$1' . gmdate('Y-m-d\TH:i:s\Z') . '$2',
-            $xml
-        );
+        $main = "\n  <url>\n    <loc>https://2podrostka.ru/</loc>\n    <lastmod>{$today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.00</priority>\n  </url>";
+        $xml = str_replace('</urlset>', $main . "\n</urlset>", $xml);
     }
-    
+
     file_put_contents($sitemap, $xml);
-    
-    // Обновляем .br версию для Brotli
+
+    // Пересоздаём Brotli-версию
     if (function_exists('brotli_compress')) {
         file_put_contents($sitemap . '.br', brotli_compress($xml, 6));
     }
-    
-    // Обновляем время модификации — Nginx сразу увидит
+
     touch($sitemap);
     if (file_exists($sitemap . '.br')) touch($sitemap . '.br');
 }
