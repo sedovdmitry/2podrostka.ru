@@ -483,5 +483,4 @@ if (file_exists($sitemap)) {
     if (file_exists($sitemap . '.br')) touch($sitemap . '.br');
 }
 
-// Отдаём готовый HTML
 echo $content;
