@@ -1,88 +1,3 @@
-<?php
-// index.php — теперь сам себя регенерирует (ISR на чистом PHP)
-
-// ================= НАСТРОЙКИ =================
-$cache_file     = __DIR__ . '/cache/index_cached.html';   // кэш-файл
-$hash_file      = __DIR__ . '/cache/last_news_hash.txt';  // хэш новостей
-$regen_interval = 3600;    // 1 час (можно 1800 — каждые 30 минут)
-$force_regen    = !empty($_GET['regen']); // ?regen=1 — принудительная регенерация
-// =============================================
-
-$now = time();
-
-// 1. Если есть параметр ?regen=1 — принудительно регенерируем (удобно для теста)
-if ($force_regen) {
-    @unlink($cache_file);
-    @unlink($hash_file);
-    header('Location: /');
-    exit('Регенерация запущена...');
-}
-
-// 2. Если кэш свежий (моложе 1 часа) — отдаём его и выходим
-if (
-    file_exists($cache_file) &&
-    (filemtime($cache_file) + $regen_interval) > $now &&
-    file_exists($hash_file)
-) {
-    readfile($cache_file);
-    exit;
-}
-
-// ================= РЕГЕНЕРАЦИЯ =================
-// Только если кэш устарел или его нет — запускаем тяжёлую логику
-
-require_once 'config/constants.php';
-require_once 'config/database.php';
-
-// Получаем свежие новости
-function getNewsBlock(): string
-{
-    $json = @file_get_contents('http://2podrostka.local/api/get_news.php?category=ru');
-    if (!$json) return '<p style="color:red;">Новости временно недоступны</p>';
-
-    $data = json_decode($json, true);
-    if (!$data || $data['status'] !== 'success') return '<p>Нет новостей</p>';
-
-    $html = '';
-    foreach ($data['data'] as $item) {
-        $title     = htmlspecialchars($item['title']);
-        $url       = htmlspecialchars($item['original_url']);
-        $publisher = htmlspecialchars($item['publisher_name'] ?? 'Источник');
-        $time_ago  = htmlspecialchars($item['time_ago']);
-        $desc      = $item['description'] ? htmlspecialchars(mb_substr(strip_tags($item['description']), 0, 160)) . '...' : '';
-        $img       = $item['image_url'] ? htmlspecialchars($item['image_url']) : '';
-        $icon      = $item['publisher_icon_url'] ? htmlspecialchars($item['publisher_icon_url']) : '';
-
-        $html .= '<div class="news-item" style="margin-bottom:25px;padding-bottom:20px;border-bottom:1px solid #eee;">';
-        if ($img) {
-            $html .= "<a href=\"$url\" target=\"_blank\" rel=\"noopener\"><img src=\"$img\" alt=\"$title\" style=\"max-width:100%;height:auto;border-radius:8px;margin-bottom:10px;\"></a>";
-        }
-        $html .= "<small style=\"color:#666;\">";
-        if ($icon) $html .= "<img src=\"$icon\" width=\"16\" height=\"16\" style=\"vertical-align:middle;margin-right:5px;\">";
-        $html .= "$publisher · $time_ago</small>";
-        $html .= "<h3 style=\"margin:10px 0;font-size:1.4em;\"><a href=\"$url\" target=\"_blank\" rel=\"noopener\" style=\"color:#333;text-decoration:none;\">$title</a></h3>";
-        if ($desc) $html .= "<p style=\"color:#555;line-height:1.5;\">$desc</p>";
-        $html .= '</div>';
-    }
-    return $html;
-}
-
-// Проверяем, изменились ли новости
-$newsBlock    = getNewsBlock();
-$currentHash  = md5($newsBlock);
-
-// Если хэш не изменился — просто обновляем время кэша, но не регенерируем весь HTML
-if (file_exists($hash_file) && file_get_contents($hash_file) === $currentHash && file_exists($cache_file)) {
-    touch($cache_file); // обновляем время модификации
-    readfile($cache_file);
-    exit;
-}
-
-// ================= ПОЛНАЯ РЕГЕНЕРАЦИЯ =================
-ob_start();
-header('Cache-Control: public, max-age=3600, stale-while-revalidate=86400');
-header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
-?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -190,7 +105,6 @@ header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
     <title>Половое воспитание детей/подростков, сексуальное образование</title>
     <link rel="stylesheet" href="/css/bootstrap-3.1.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/css/custom.css?v=1" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/widgets/news/styles.css?v=<?= time() ?>" media="all">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -215,7 +129,7 @@ header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
   <body>
     <?php include('./parts/analytics.php'); ?>
     <div class="bg_slider" align="center">
-      <div class="slider_wrapp">
+      <div clss="slider_wrapp">
         <div id="placeholder" align="center"></div>
       </div>
     </div>
@@ -232,14 +146,18 @@ header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
         <span class="inner"></span>
       </div>
     </div>
+
+    <!-- Блок новостей -->
     <div class="container" style="margin-top: 30px">
       <div class="row">
         <div class="col-lg-12 news-conainer">
-          <?php // $newsBlock; ?>
-          <?php include './widgets/news/index.php'; ?>
+          <?php
+            include($_SERVER['DOCUMENT_ROOT'] . '/widgets/news/index.php');
+          ?>
         </div>
       </div>
     </div>
+
     <div class="container">
       <br>
       <div class="row">
@@ -445,26 +363,3 @@ header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
     <?php include('./parts/vk-group_v2.php'); ?>
   </body>
 </html>
-<?php
-// ===============================================================
-
-$content = ob_get_clean();
-
-// Сохраняем кэш и хэш
-@file_put_contents($cache_file, $content);
-@file_put_contents($hash_file, $currentHash);
-
-// Обновляем lastmod в sitemap.xml
-$sitemap = __DIR__ . '/sitemap.xml';
-if (file_exists($sitemap)) {
-    $xml = file_get_contents($sitemap);
-    $xml = preg_replace(
-        '/(<loc>https:\/\/2podrostka\.ru\/<\/loc>\s*<lastmod>)[^<]+/',
-        '$1' . gmdate('Y-m-d\TH:i:s\Z'),
-        $xml
-    );
-    @file_put_contents($sitemap, $xml);
-}
-
-// Отдаём готовый HTML
-echo $content;
