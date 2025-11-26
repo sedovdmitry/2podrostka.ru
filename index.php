@@ -454,31 +454,38 @@ $content = ob_get_clean();
 @file_put_contents($cache_file, $content);
 @file_put_contents($hash_file, $currentHash);
 
+// === Обновляем lastmod ТОЛЬКО у главной страницы в sitemap.xml ===
 $sitemap = __DIR__ . '/sitemap.xml';
 if (file_exists($sitemap)) {
-    $today = gmdate('Y-m-d\TH:i:s') . '+00:00';
+    $today = gmdate('Y-m-d\TH:i:s') . '+00:00';   // 2025-11-26T18:55:12+00:00
 
     $xml = file_get_contents($sitemap);
-    $xml = preg_replace('/<lastmod>[^<]+<\/lastmod>/', "<lastmod>{$today}</lastmod>", $xml);
 
+    // 1. Обновляем существующую запись главной
+    $xml = preg_replace(
+        '#(<loc>https://2podrostka\.ru/</loc>\s*<lastmod>)[^<]+(#',
+        "$1{$today}$2",
+        $xml
+    );
+
+    // 2. Если главной вообще нет — добавляем её
     if (!str_contains($xml, '<loc>https://2podrostka.ru/</loc>')) {
-        $main = "\n  <url>\n    <loc>https://2podrostka.ru/</loc>\n    <lastmod>{$today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.00</priority>\n  </url>";
-        $xml = str_replace('</urlset>', $main . "\n</urlset>", $xml);
+        $mainEntry = "\n  <url>\n    <loc>https://2podrostka.ru/</loc>\n    <lastmod>{$today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.00</priority>\n  </url>";
+        $xml = preg_replace('#(</urlset>)#', $mainEntry . "\n$1", $xml);
     }
 
     file_put_contents($sitemap, $xml);
 
+    // Пересоздаём .br-версию
     if (function_exists('brotli_compress')) {
         $br = brotli_compress($xml, 6);
         if ($br !== false) {
             file_put_contents($sitemap . '.br', $br);
+            touch($sitemap . '.br');
         }
     }
 
     touch($sitemap);
-    if (file_exists($sitemap . '.br')) {
-        touch($sitemap . '.br');
-    }
 }
 
 echo $content;
