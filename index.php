@@ -37,7 +37,7 @@ require_once 'config/database.php';
 // Получаем свежие новости
 function getNewsBlock(): string
 {
-    $json = @file_get_contents('http://2podrostka.local/api/get_news.php?category=ru');
+    $json = @file_get_contents('https://2podrostka.ru/api/get_news.php?category=ru');
     if (!$json) return '<p style="color:red;">Новости временно недоступны</p>';
 
     $data = json_decode($json, true);
@@ -102,14 +102,14 @@ header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
     <link rel="alternate" hreflang="ru" href="https://2podrostka.ru">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="2podrostka.ru">
-    <meta name="twitter:title" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов.: https://2podrostka.ru">
-    <meta name="twitter:description" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов: https://2podrostka.ru">
+    <meta name="twitter:title" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов">
+    <meta name="twitter:description" content="Сайт о половом воспитании школьников для подростков, родителей, учителей и социальных педагогов">
     <meta name="twitter:url" content="https://2podrostka.ru">
     <meta property="og:title" content="Половое воспитание, сексуальное образование школьников-подростков">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://2podrostka.ru">
     <meta property="og:site_name" content="Половое воспитание подростков. Спецпроект Молодежной инициативы г. Балаково">
-    <meta property="og:description" content="К 15 годам 41% девушек в России занимались сексом. 42% беременностей – аборты. Два подростка: https://2podrostka.ru">
+    <meta property="og:description" content="К 15 годам 41% девушек в России занимались сексом. 42% беременностей – аборты. Два подростка">
     <meta property="og:image" content="https://2podrostka.ru/img/og/molodezhnaya-initciativa-logo.jpg">
     <meta property="og:image:secure_url" content="https://2podrostka.ru/img/og/molodezhnaya-initciativa-logo.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -235,7 +235,6 @@ header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
     <div class="container" style="margin-top: 30px">
       <div class="row">
         <div class="col-lg-12 news-conainer">
-          <?php // $newsBlock; ?>
           <?php include './widgets/news/index.php'; ?>
         </div>
       </div>
