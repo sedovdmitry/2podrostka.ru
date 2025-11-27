@@ -454,38 +454,53 @@ $content = ob_get_clean();
 @file_put_contents($cache_file, $content);
 @file_put_contents($hash_file, $currentHash);
 
-// === Обновляем lastmod ТОЛЬКО у главной страницы в sitemap.xml ===
+// === Обновляем lastmod ТОЛЬКО у главной страницы — ЧЕСТНО И НАДЁЖНО ===
 $sitemap = __DIR__ . '/sitemap.xml';
-if (file_exists($sitemap)) {
-    $today = gmdate('Y-m-d\TH:i:s') . '+00:00';   // 2025-11-26T18:55:12+00:00
+if (file_exists($sitemap) && filesize($sitemap) > 100) {   // защита от пустого файла
+    $today = gmdate('Y-m-d\TH:i:s') . '+00:00';
 
     $xml = file_get_contents($sitemap);
 
-    // 1. Обновляем существующую запись главной
-    $xml = preg_replace(
-        '#(<loc>https://2podrostka\.ru/</loc>\s*<lastmod>)[^<]+(#',
-        "$1{$today}$2",
-        $xml
-    );
-
-    // 2. Если главной вообще нет — добавляем её
-    if (!str_contains($xml, '<loc>https://2podrostka.ru/</loc>')) {
-        $mainEntry = "\n  <url>\n    <loc>https://2podrostka.ru/</loc>\n    <lastmod>{$today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.00</priority>\n  </url>";
-        $xml = preg_replace('#(</urlset>)#', $mainEntry . "\n$1", $xml);
-    }
-
-    file_put_contents($sitemap, $xml);
-
-    // Пересоздаём .br-версию
-    if (function_exists('brotli_compress')) {
-        $br = brotli_compress($xml, 6);
-        if ($br !== false) {
-            file_put_contents($sitemap . '.br', $br);
-            touch($sitemap . '.br');
+    // Самый надёжный способ — просто заменяем строку целиком
+    $search  = '<loc>https://2podrostka.ru/</loc>';
+    if (str_contains($xml, $search)) {
+        $oldLine = '';
+        $lines = explode("\n", $xml);
+        foreach ($lines as &$line) {
+            if (str_contains($line, $search)) {
+                $oldLine = $line;
+                // Находим строку с lastmod и заменяем её
+                foreach ($lines as &$l) {
+                    if (str_contains($l, '<lastmod>') && str_contains($l, '</lastmod>')) {
+                        $l = "    <lastmod>{$today}</lastmod>";
+                        break;
+                    }
+                }
+                break;
+            }
         }
+        unset($line, $l);
+        $xml = implode("\n", $lines);
+    } else {
+        // Если главной нет — добавляем в начало
+        $newEntry = "  <url>\n    <loc>https://2podrostka.ru/</loc>\n    <lastmod>{$today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.00</priority>\n  </url>\n";
+        $xml = str_replace('<urlset', "<urlset\n" . $newEntry, $xml);
     }
 
-    touch($sitemap);
+    // Записываем только если XML не пустой
+    if (strlen($xml) > 100) {
+        file_put_contents($sitemap, $xml);
+
+        // Пересоздаём .br
+        if (function_exists('brotli_compress')) {
+            $br = brotli_compress($xml, 6);
+            if ($br !== false) {
+                file_put_contents($sitemap . '.br', $br);
+                touch($sitemap . '.br');
+            }
+        }
+        touch($sitemap);
+    }
 }
 
 echo $content;
