@@ -211,3 +211,6 @@ node_modules
 # Данные
 /public/video
 /assets/video
+
+# openlore analysis artifacts
+.openlore/

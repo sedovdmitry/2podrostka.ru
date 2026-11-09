@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "_openlore": true,
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"C:\\nvm4w\\nodejs\\node.exe\" \"C:\\Users\\Dima\\AppData\\Local\\nvm\\v24.22.2\\node_modules\\openlore\\dist\\cli\\index.js\" orient --json"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "_openlore": true,
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"C:\\nvm4w\\nodejs\\node.exe\" \"C:\\Users\\Dima\\AppData\\Local\\nvm\\v24.22.2\\node_modules\\openlore\\dist\\cli\\index.js\" orient --inject"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+schema: spec-driven
+openlore:
+  version: 1.2.0
+  generatedAt: 2026-11-09T12:04:44.785Z
+  domains:
+    - "404"
+    - amp
+    - config
+    - css
+    - css-min
+    - img
+    - js
+    - undomained
+  confidence: 0.78
+context: |-
+  # Auto-detected by openlore
+  Tech stack: PHP, Bootstrap, jQuery
+  Architecture: Monolithic
+  Domains: 404, amp, config, css, css-min, gzip-js, img, js, kontracepcii, news, parts

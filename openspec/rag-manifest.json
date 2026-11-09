@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-11-09T12:04:44.815Z",
+  "specVersion": "1.0.0",
+  "domains": [
+    {
+      "domain": "404",
+      "specPath": "openspec/specs/404/spec.md",
+      "sourceFiles": [
+        "C:\\OSPanel\\domains\\2podrostka.local\\BingSiteAuth.xml",
+        "C:\\OSPanel\\domains\\2podrostka.local\\index.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\SitemapGenerator.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\test_db.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\bootstrap1.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\generateSitemap.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\.gitignore",
+        "C:\\OSPanel\\domains\\2podrostka.local\\404.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\feed.rss",
+        "C:\\OSPanel\\domains\\2podrostka.local\\infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\kontrol-rozhdaemosti-metody-kontracepcii.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\mau-tsko-dm-molodezhnaya-initsiativa.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\news.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\README.md",
+        "C:\\OSPanel\\domains\\2podrostka.local\\sitemap.xml",
+        "C:\\OSPanel\\domains\\2podrostka.local\\.eslintrc.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\.prettierrc",
+        "C:\\OSPanel\\domains\\2podrostka.local\\ads.txt",
+        "C:\\OSPanel\\domains\\2podrostka.local\\ai-cookie.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\be529b51bf55.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\google48719379f71658b9.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\googled493a84debb089d8.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\header.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\package.json",
+        "C:\\OSPanel\\domains\\2podrostka.local\\polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\reset_cache.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\robots.txt",
+        "C:\\OSPanel\\domains\\2podrostka.local\\wmail_d0d62f10fbf4d147.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\yandex_29ee4ae64b375bcd.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\yandex_29ee4ae64b375bcd.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\yandex_6e73059fb62f1500.php"
+      ],
+      "requirementCount": 16,
+      "dependsOn": [],
+      "calledBy": []
+    },
+    {
+      "domain": "amp",
+      "specPath": "openspec/specs/amp/spec.md",
+      "sourceFiles": [
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\_old_index.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\example.amp",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\_index.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\index.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\infografika-podrostki-i-seks-v-rossii-2014-statistika-issledovaniya.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\mify-o-sekse-kak-vstrechatsya-s-devushkoy-psihologiya-parnei-podrostkov.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\polovoe-vospitanie-devushki-podrostka-seksualnoe-obrazovanie-podrostkov.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\polovoye-vospitaniye-mladshikh-shkolnikov-polovoye-vospitaniye-v-semye.html",
+        "C:\\OSPanel\\domains\\2podrostka.local\\amp\\pravilnoe-ispolzovanie-prezervativa-kak-pravilno-nadevat-prezervativ-ippp-zppp-vich-infekciya-spid.html"
+      ],
+      "requirementCount": 13,
+      "dependsOn": [],
+      "calledBy": []
+    },
+    {
+      "domain": "config",
+      "specPath": "openspec/specs/config/spec.md",
+      "sourceFiles": [
+        "C:\\OSPanel\\domains\\2podrostka.local\\config\\database.php",
+        "C:\\OSPanel\\domains\\2podrostka.local\\config\\constants.example.php"
+      ],
+      "requirementCount": 1,
+      "dependsOn": [],
+      "calledBy": []
+    },
+    {
+      "domain": "css",
+      "specPath": "openspec/specs/css/spec.md",
+      "sourceFiles": [
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap-3.1.min.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap3.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap3.min.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\custom.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap.min.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap1.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap1.min.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\bootstrap2.nogzip.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\birth_control2.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\business-frontpage.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\business-frontpage.min.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\glitched.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\social-likes_flat.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css\\about.css"
+      ],
+      "requirementCount": 39,
+      "dependsOn": [],
+      "calledBy": []
+    },
+    {
+      "domain": "css-min",
+      "specPath": "openspec/specs/css-min/spec.md",
+      "sourceFiles": [
+        "C:\\OSPanel\\domains\\2podrostka.local\\css-min\\bootstrap.min.css",
+        "C:\\OSPanel\\domains\\2podrostka.local\\css-min\\business-frontpage.min.css"
+      ],
+      "requirementCount": 11,
+      "dependsOn": [],
+      "calledBy": []
+    },
+    {
+      "domain": "img",
+      "specPath": "openspec/specs/img/spec.md",
+      "sourceFiles": [],
+      "requirementCount": 9,
+      "dependsOn": [],
+      "calledBy": []
+    },
+    {
+      "domain": "js",
+      "specPath": "openspec/specs/js/spec.md",
+      "sourceFiles": [
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\commento.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\default.nogzip.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\Imager.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\jquery.cross-slide.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\resize.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\bootstrap.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\jquery-1.10.2.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\jquery-1.10.2.min.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\jquery-1.10.2.nogzip.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\jquery.1.8.0.min.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\jquery.fixedcontent.min.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\jquery.nogzip.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\picturefill.min.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\smartresize.js",
+        "C:\\OSPanel\\domains\\2podrostka.local\\js\\social-likes.min.js"
+      ],
+      "requirementCount": 14,
+      "dependsOn": [],
+      "calledBy": []
+    },
+    {
+      "domain": "undomained",
+      "specPath": "openspec/specs/undomained/spec.md",
+      "sourceFiles": [],
+      "requirementCount": 12,
+      "dependsOn": [],
+      "calledBy": []
+    }
+  ]
+}
