@@ -31,9 +31,7 @@
       background-attachment: fixed;
       }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet">
     <link href="/css/bootstrap-3.1.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" media="all" href="/css/birth_control2.css"/>
     <link href="/css/custom.css" rel="stylesheet">
