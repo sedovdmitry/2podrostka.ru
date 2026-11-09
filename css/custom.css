@@ -49,3 +49,11 @@
     padding: 0;
   }
 }
+
+/* Перенос длинных русских слов на узких экранах (страница /privacy и тексты страниц);
+   overflow-wrap — страховка для слов, которые перенести нельзя (URL, латиница) */
+body {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
