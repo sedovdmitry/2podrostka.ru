@@ -391,6 +391,9 @@ header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 3600) . ' GMT');
                   <center>
                     <p>При копировании материалов ссылка на сайт обязательна.</p>
                   </center>
+                  <center>
+                    <p><a href="/privacy/">Политика в отношении обработки персональных данных</a></p>
+                  </center>
                 <br />
                 <small>
                   <div align="left">

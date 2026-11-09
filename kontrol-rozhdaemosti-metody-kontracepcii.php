@@ -295,6 +295,9 @@
               <center>
                 <p>При копировании материалов ссылка на сайт обязательна.</p>
               </center>
+              <center>
+                <p><a href="/privacy/">Политика в отношении обработки персональных данных</a></p>
+              </center>
               <br/>
               <?php include('./parts/metrics.php'); ?>
             </div>
