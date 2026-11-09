@@ -13,7 +13,12 @@
   <link href="/css/custom.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f5f7f9;
+      background-color: #2e5077;
+      background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(9, 30, 54, 0.45) 100%),
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.08) 0px, rgba(0, 0, 0, 0.08) 2px, transparent 2px, transparent 4px);
+      background-attachment: fixed;
       color: #2c3e50;
       line-height: 1.65;
       padding-top: 25px;
@@ -23,7 +28,7 @@
       background: #ffffff;
       border: 1px solid #e3e9ee;
       border-radius: 6px;
-      box-shadow: 0 2px 10px rgba(16, 51, 84, 0.07);
+      box-shadow: 0 6px 24px rgba(9, 30, 54, 0.35);
       padding: 32px 38px;
       margin-bottom: 25px;
     }
@@ -52,9 +57,12 @@
     }
     .footer-note {
       font-size: 13px;
-      color: #7a8a99;
+      color: #c8d8e6;
       text-align: center;
       margin-top: 18px;
+    }
+    .footer-note a {
+      color: #eaf2f8;
     }
   </style>
 </head>
